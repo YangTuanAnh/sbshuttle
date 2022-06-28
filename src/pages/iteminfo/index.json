@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "Item Information",
+  "usingComponents": {
+    "textfield": "@tiki.vn/tini-ui/es/textfield/index"
+  }
+}

@@ -1,0 +1,11 @@
+@import "@tiki.vn/tini-style/es/index.tcss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: #f7f7f7;
+}

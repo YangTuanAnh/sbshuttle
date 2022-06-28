@@ -1,0 +1,51 @@
+<view>
+  <button>Send</button>
+  <button>Receive</button>
+  <view class="destination">
+    <text>Destination</text>
+    <address
+  streetErrorMsg="{{streetErrorMsg}}"
+  cityErrorMsg="{{cityErrorMsg}}"
+  districtErrorMsg="{{districtErrorMsg}}"
+  wardErrorMsg="{{wardErrorMsg}}"
+  streetLabel="Địa chỉ nhận hàng"
+  streetPlaceholder="Nhập số nhà, tên đường..."
+  street="{{street}}"
+  city="{{city}}"
+  district="{{district}}"
+  ward="{{ward}}"
+  full_name="{{full_name}}"
+  phone_number="{{phone_number}}"
+  onChangeAddress="onChangeAddress"
+  onFullAddress="onFullAddress" />
+  </view>
+
+  <view class="Pickup">
+    <text>Pick up</text>
+    <text>Time</text>
+    <button>AM</button>
+    <button>PM</button>
+    <dropdown
+    maskClose="{{false}}"
+    bottomSheetHeight="300"
+    items="{{items1}}"
+    value="{{selected1}}"
+    onSelect="onSelect1"
+    placeholder="onSelect"/>
+  </view>
+
+  <view class="item-information">
+    <text>Item Information</text>
+    <dropdown
+    maskClose="{{false}}"
+    bottomSheetHeight="300"
+    items="{{items2}}"
+    value="{{selected2}}"
+    onSelect="onSelect2"
+    placeholder="onSelect"/>
+  </view>
+
+  <navigator open-type="navigate" url="pages/iteminfo/index">
+    Next >>
+  </navigator>
+</view>

@@ -1,0 +1,23 @@
+<view class="container">
+  <text>Name</text>
+  <textfield/>
+
+  <text>Weight</text>
+  <button class="weight">
+    < 1kg
+  </button>
+  <button class="weight">
+    2-5kg
+  </button>
+  <button class="weight">
+    5kg+
+  </button>
+
+  <block-header title="Usage" description="Pick image from camera or albums" />
+  <view class="block-content">
+    <button class="button-full" onTap="onChooseImage">Choose Image</button>
+  </view>
+  <block tiki:for="{{imgs}}">
+    <image src="{{item}}" />
+  </block>
+</view>
