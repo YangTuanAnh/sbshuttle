@@ -1,0 +1,241 @@
+.tab-item {
+    height: 104px;
+    background-color: #fff;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.gray10 {
+    background-color: var(--gray10);
+}
+
+
+.next_page {
+    margin-top: 10px;
+}
+
+#btn_send {
+
+    margin-left: 100px;
+    border-radius: 15px;
+    color: white;
+}
+
+#btn_receive {
+
+    margin-left: 0;
+    border-radius: 15px;
+    color: black;
+
+}
+
+.content {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.list-item {
+    margin-top: 10px;
+    margin-left: 9px;
+    max-width: 95%;
+}
+
+.list-item .storageLocation {
+    margin-top: 10px;
+}
+
+.item-information {
+    margin-left: 9px;
+    margin-top: 10px;
+}
+
+.item-information .drop {
+    margin-top: 10px;
+    width: 50%;
+}
+
+.next-page {
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
+.banner-ad {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.pick {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.pick .pick-up-time {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.am-pm {
+    margin-top: 10px;
+    max-width: 30%;
+    margin-left: 20px;
+}
+
+.container-pick {
+    margin-left: 50px;
+}
+
+.time-text {
+    font-size: 14px;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.container-pick .time {
+    max-width: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.info-item {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.info-item .row-item-a {
+    margin-top: 20px;
+}
+
+.info-item .row-item-b {
+    margin-top: 20px;
+}
+
+.info-item-b {
+    margin-top: 30px;
+}
+
+.container-a {
+    margin-top: -5px;
+    max-width: 40%;
+    margin-left: 45px;
+}
+
+.container-b {
+    max-width: 40%;
+    margin-left: 45px;
+}
+
+.item-a {
+    margin-top: 5px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.item-b {
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.info-total {
+    margin-top: 40px;
+}
+
+.info-total .text-tatal {
+    margin-left: 20px;
+}
+
+.info-total .cost-booking {
+    margin-left: 150px;
+    font-weight: bold;
+}
+
+.submit {
+    border-radius: 8px;
+    width: 90%;
+    margin: 5% auto;
+}
+
+/* ----------------------------------------*/
+
+.page-list-header {
+    background-color: var(--white);
+    padding: var(--space-stack-small);
+    margin-bottom: var(--space-stack-2x-small);
+}
+
+.page-list-header-title {
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
+    line-height: var(--font-height-large);
+}
+
+.page-list-header-content {
+    margin-top: var(--space-stack-2x-small);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-base);
+    line-height: var(--font-height-base);
+}
+
+.page-list-content {
+    padding: var(--space-stack-small);
+}
+
+.page-list-content-title {
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
+    line-height: var(--font-height-large);
+    margin-bottom: var(--space-stack-medium);
+}
+
+.page-list-content-block {
+    margin-top: 20px;
+    background-color: var(--white);
+    padding: var(--space-stack-medium);
+    padding-bottom: var(--space-stack-large);
+    border-radius: var(--radius-rounded-8px, 8px);
+    margin-bottom: var(--space-stack-medium);
+    border: 1px solid var(--gray20);
+}
+
+.page-list-content-block-title {
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    line-height: var(--font-height-base);
+    margin-bottom: var(--space-stack-2x-small);
+}
+
+.page-list-content-block button {
+    border-radius: var(--radius-rounded-4px, 4px);
+}
+
+.text-title {
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    line-height: var(--font-height-base);
+    color: var(--text-list-primary, var(--gray100));
+}
+
+.text-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.text-regular {
+    font-weight: var(--font-weight-regular);
+}

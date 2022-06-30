@@ -1,0 +1,107 @@
+<view>
+  <view class="header">
+    <image class="w-full" src="/assets/3968608.jpg"></image>
+  </view>
+
+  <view class="next_page" style=" display:inline-flex;">
+    <button onTap="onTap" size="medium" type="ghost" id="btn_send" style="background-color: black;">Send</button>
+    <button onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: white;">Receive</button>
+  </view>
+  <view class="content"><text>Routine</text></view>
+  <view class="page-list-content-block">
+    <list-item arrow upperSubtitle="Description" thumb="assets/avatar.png" thumbSize="40px" onClick="getAddress">
+      <view>Account</view>
+      <view slot="suffix">
+        <view class="text-title text-regular">Get address now</view>
+      </view>
+      <view slot="prefix">
+        <icon type="location" size="24" color="green" />
+      </view>
+    </list-item>
+    <list-item arrow upperSubtitle="Description">
+      <view>Storage</view>
+      <view slot="prefix">
+        <icon type="home" size="24" color="red" />
+      </view>
+    </list-item>
+  </view>
+
+  <!-- header banner-->
+  <!--
+  <view class="destination">
+    <text>Destination</text>
+  </view>
+  <view class="list-item">
+    <view class="myLocation">
+      <textfield shape="pill" placeholder="Your Location" iconLeft="location" iconColor="green" />
+    </view>
+    <view class="storageLocation">
+      <textfield shape ="pill" placeholder="Choose storage to keep package" iconLeft="home" />
+    </view>
+  </view>
+-->
+
+  <template id="timenow">
+    <view>
+      <input type="textfield" disabled="false"></input>
+    </view>
+
+  </template>
+
+  <view class="pick">
+    <view class="pick-up-time"><text>Pick up</text></view>
+    <view class="container-pick" style="display: inline-flex;">
+
+      <view class="time-text">Time</view>
+      <dropdown class="am-pm" bottomSheetTitle=" Choose timeline" shape="rounded" maskClose="{{false}}"
+        bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="AM/PM" />
+      <!-- Pick time when customer arrived airport-->
+
+      <dropdown class="time" bottomSheetTitle=" Choose time" shape="rounded" maskClose="{{false}}"
+        bottomSheetHeight="300" items="{{items2}}" value="{{selected2}}" onSelect="onSelect2"
+        placeholder="1:00 - 2:00" />
+    </view>
+  </view>
+
+  <!-- Item info-->
+
+  <view class="info-item w-full">
+    <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
+    <view class="row-item-a w-full flex flex-row w-full">
+      <button class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;">Baggage</button>
+      <view class="container-a">
+        <stepper onChange="callBackFn" step="{{1}}" showNumber value="{{value}}" inputWidth="60px" min="{{2}}" />
+      </view>
+    </view>
+
+    <view class="row-item-b flex flex-row w-full" >
+      <button class="item-b" type="ghost" style="background-color:#EEEEEE; color: black;">Belongings</button>
+      <view class="container-b">
+        <stepper onChange="callBackFn" step="{{1}}" showNumber value="{{value}}" inputWidth="60px" min="{{2}}" />
+      </view>
+    </view>
+  </view>
+
+  <!-- Total bill-->
+  <view class="info-total">
+    <view class="row-total">
+      <text class="text-tatal">
+        Total price
+      </text>
+      <text class="cost-booking">
+        <!-- booking $ -->
+        ${{100.12}}
+      </text>
+    </view>
+  </view>
+
+  <button id="send-sub" class="submit" style="background-color:#0099FF;">Submit</button>
+
+  <view class="next-page">
+    <label>
+      <navigator open-type="navigate" url="pages/odersDetail/index">
+        <!-- next -->
+      </navigator>
+    </label>
+  </view>
+</view>

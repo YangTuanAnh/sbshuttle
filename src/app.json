@@ -1,6 +1,30 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/iteminfo/index"
-  ]
+    "pages/home/index",
+    "pages/odersDetail/index",
+    "pages/user/index",
+    "pages/Receive/index"
+  ],
+  "window": {
+    "defaultTitle": "",
+    "titleBarColor": "#fff",
+    "backgroundColor": "#F5F7FC",
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "items": [
+      {
+        "name": "Booking Page",
+        "pagePath": "pages/home/index",
+        "icon": "assets/order.png",
+        "activeIcon": "assets/order.png"
+      },
+      {
+        "name": "User",
+        "pagePath": "pages/user/index",
+        "icon": "assets/account.png",
+        "activeIcon": "assets/account.png"
+      }
+    ]
+  }
 }
