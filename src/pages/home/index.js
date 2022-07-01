@@ -9,7 +9,7 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
-        
+
         location: undefined
     },
 
@@ -50,9 +50,10 @@ Page({
         my.createSelectorQuery()
             .select(event.currentTarget.id)
             .exec((ret) => {
-                my.navigateTo({
-                    url: "pages/receive/index"
-                })
+                if (event.currentTarget.id == 'btn_receive')
+                    my.navigateTo({
+                        url: "pages/receive/index"
+                    })
             })
     },
     getAddress(event) {
@@ -71,12 +72,12 @@ Page({
     },
 
     pageLogin(event) {
-      my.createSelectorQuery()
-          .select(event.currentTarget.id)
-          .exec((ret) => {
-              my.navigateTo({
-                  url: "pages/login/index"
-              })
-          })
-      }
+        my.createSelectorQuery()
+            .select(event.currentTarget.id)
+            .exec((ret) => {
+                my.navigateTo({
+                    url: "pages/login/index"
+                })
+            })
+    }
 });

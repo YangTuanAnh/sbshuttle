@@ -1,2 +1,67 @@
 <view class="container">
+
+  <view class="w-full flex justify-center items-center">
+    <button class="m-5x-small radius-pill text-black" onTap="onTap" size="medium" type="ghost" id="btn_send" style="background-color: white;">Send</button>
+    <button class="m-5x-small radius-pill text-white" onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: black;">Receive</button>
+  </view>
+  <view>
+    <text>Your Number</text>
+    <textfield></textfield>
+  </view>
+
+  <view class="content"><text>Routine</text></view>
+  <view class="page-list-content-block">
+    <list-item arrow upperSubtitle="Description" thumb="assets/avatar.png" thumbSize="40px" onClick="getAddress">
+      <view>Account</view>
+      <view slot="suffix">
+        <view class="text-title text-regular">Get address now</view>
+      </view>
+      <view slot="prefix">
+        <icon type="location" size="24" color="green" />
+      </view>
+    </list-item>
+    <list-item arrow upperSubtitle="Description">
+      <view>Storage</view>
+      <view slot="prefix">
+        <icon type="home" size="24" color="red" />
+      </view>
+    </list-item>
+  </view>
+  <button>Calculate Distance</button>
+  <textfield disabled="true"></textfield>
+
+  <view class="pick">
+    <view class="pick-up-time"><text>Pick up</text></view>
+    <view class="container-pick" style="display: inline-flex;">
+
+      <view class="time-text">Time</view>
+      <dropdown class="am-pm" bottomSheetTitle=" Choose timeline" shape="rounded" maskClose="{{false}}"
+        bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="AM/PM" />
+      <!-- Pick time when customer arrived airport-->
+
+      <dropdown class="time" bottomSheetTitle=" Choose time" shape="rounded" maskClose="{{false}}"
+        bottomSheetHeight="300" items="{{items2}}" value="{{selected2}}" onSelect="onSelect2"
+        placeholder="1:00 - 2:00" />
+    </view>
+  </view>
+
+  <view>
+    <text>Service Type</text>
+    <button>SB NOW (Within 2h)</button>
+    <button>SB STANDARD (Within 4h)</button>
+  </view>
+
+  <view class="info-total">
+    <view class="row-total">
+      <text class="text-tatal">
+        Total price
+      </text>
+      <text class="cost-booking">
+        <!-- booking $ -->
+        ${{100.12}}
+      </text>
+    </view>
+  </view>
+
+  <button>Submit</button>
 </view>

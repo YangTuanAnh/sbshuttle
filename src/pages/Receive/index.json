@@ -1,8 +1,11 @@
 {
-  "defaultTitle": "This is a page",
-  "transparentTitle": "auto",
-  "titleBarColor": "#1B6BFF",
-  "titleColor": "#fff",
-  "disableHardwareBack": "NO",
-  "components": true
+    "defaultTitle": "Receive",
+    "titleColor": "black",
+    "usingComponents": {
+        "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+        "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
+        "address": "@tiki.vn/tini-ui/es/address/index",
+        "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
+        "stepper": "@tiki.vn/tini-ui/es/stepper/index"
+    }
 }
