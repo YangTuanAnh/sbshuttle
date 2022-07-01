@@ -4,8 +4,5 @@
   "titleBarColor": "#1B6BFF",
   "titleColor": "#fff",
   "disableHardwareBack": "NO",
-
-  "components" : true,
-  "usingComponent" :{
-  }
+  "components": true
 }

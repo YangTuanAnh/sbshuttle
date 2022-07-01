@@ -4,7 +4,7 @@
   </view>
 
   <view class="next_page" style=" display:inline-flex;">
-    <button onTap="onTap" size="medium" type="ghost" id="btn_send" style="background-color: black;">Send</button>
+    <button onTap="" size="medium" type="ghost" id="btn_send" style="background-color: black;">Send</button>
     <button onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: white;">Receive</button>
   </view>
   <view class="content"><text>Routine</text></view>
@@ -95,7 +95,7 @@
     </view>
   </view>
 
-  <button id="send-sub" class="submit" style="background-color:#0099FF;">Submit</button>
+  <button onTap ="pageLogin" id="send-sub" class="submit" style="background-color:#0099FF;">Submit</button>
 
   <view class="next-page">
     <label>

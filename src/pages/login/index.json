@@ -4,8 +4,9 @@
   "titleBarColor": "#1B6BFF",
   "titleColor": "#fff",
   "disableHardwareBack": "NO",
+  "components": true,
 
-  "components" : true,
-  "usingComponent" :{
+  "usingComponents" : {
+    "textfield": "@tiki.vn/tini-ui/es/textfield/index"
   }
 }

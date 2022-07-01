@@ -3,7 +3,8 @@
     "pages/home/index",
     "pages/odersDetail/index",
     "pages/user/index",
-    "pages/Receive/index"
+    "pages/receive/index",
+    "pages/login/index"
   ],
   "window": {
     "defaultTitle": "",
