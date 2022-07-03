@@ -1,8 +1,8 @@
 <view class="container">
 
-  <view class="w-full flex justify-center items-center">
-    <button class="m-5x-small radius-pill text-black" onTap="onTap" size="medium" type="ghost" id="btn_send" style="background-color: white;">Send</button>
-    <button class="m-5x-small radius-pill text-white" onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: black;">Receive</button>
+  <view class="w-full flex justify-center items-center py-small">
+    <button class="mr-large radius-pill text-black" onTap="onTap" size="medium" type="ghost" id="btn_send" style="background-color: white;">Send</button>
+    <button class="radius-pill text-white" onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: black;">Receive</button>
   </view>
   <view>
     <text class=" ml-large text-large font-bold mt-large">Your Number</text>
@@ -28,15 +28,15 @@
     </list-item>
   </view>
   <view class="inline-flex">
-  <button class="radius-pill mx-large mt-large inline">Calculate Distance</button>
+  <button class="radius-pill mx-large mt-large inline" style="width: 75%">Calculate Distance</button>
   <textfield disabled="true" class="mr-large inline mt-large"></textfield>
 </view>
   <view class="pick">
-    <view class="pick-up-time"><text>Pick up</text></view>
-    <view class="container-pick" style="display: inline-flex;">
+    <view class="ml-large text-large font-bold mt-large mb-small"><text>Pick up</text></view>
+    <view class="container-pick mx-large inline-flex" >
 
-      <view class="time-text">Time</view>
-      <dropdown class="am-pm" bottomSheetTitle=" Choose timeline" shape="rounded" maskClose="{{false}}"
+      <view class="font-bold mr-large text-medium items-center">Time</view>
+      <dropdown class="am-pm mr-small" bottomSheetTitle=" Choose timeline" shape="rounded" maskClose="{{false}}"
         bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="AM/PM" />
       <!-- Pick time when customer arrived airport-->
 
@@ -46,23 +46,26 @@
     </view>
   </view>
 
-  <view>
-    <text>Service Type</text>
-    <button>SB NOW (Within 2h)</button>
-    <button>SB STANDARD (Within 4h)</button>
+  <view class="mt-large mx-large">
+    <text class="text-large font-bold mt-large mb-small">Service Type</text>
+    <button class="w-full radius-pill mt-small" type="outline">SB NOW (Within 2h)</button>
+    <button class="w-full radius-pill mt-small" type="outline">SB STANDARD (Within 4h)</button>
   </view>
 
-  <view class="info-total">
-    <view class="row-total">
-      <text class="text-tatal">
+  <view class="mx-large mt-large">
+    <view class="row-total flex-inline">
+      <text class="font-bold text-medium w-full mr-large">
         Total price
       </text>
-      <text class="cost-booking">
+      <text class="cost-booking ml-large w-full">
         <!-- booking $ -->
         ${{100.12}}
       </text>
     </view>
   </view>
 
-  <button>Submit</button>
+  <view class="mx-large">
+    <button class="mt-large w-full radius-pill">Submit</button>
+  </view>
+  
 </view>
