@@ -65,7 +65,7 @@
   </view>
 
   <view class="mx-large">
-    <button class="mt-large w-full radius-pill">Submit</button>
+    <button class="mt-large w-full radius-pill" onTap="onSubmit">Submit</button>
   </view>
   
 </view>

@@ -4,7 +4,9 @@
     "pages/odersDetail/index",
     "pages/user/index",
     "pages/receive/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/receipt/index",
+    "pages/receipt/index"
   ],
   "window": {
     "defaultTitle": "",

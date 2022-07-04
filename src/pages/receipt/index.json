@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "Receipt",
+    "titleColor": "black",
+    "usingComponents": {
+        "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+        "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
+        "address": "@tiki.vn/tini-ui/es/address/index",
+        "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
+        "stepper": "@tiki.vn/tini-ui/es/stepper/index"
+    }
+}
