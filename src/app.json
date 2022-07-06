@@ -1,33 +1,32 @@
 {
-  "pages": [
-    "pages/home/index",
-    "pages/odersDetail/index",
-    "pages/user/index",
-    "pages/receive/index",
-    "pages/login/index",
-    "pages/receipt/index",
-    "pages/receipt/index"
-  ],
-  "window": {
-    "defaultTitle": "",
-    "titleBarColor": "#fff",
-    "backgroundColor": "#F5F7FC",
-    "allowsBounceVertical": "NO"
-  },
-  "tabBar": {
-    "items": [
-      {
-        "name": "Booking Page",
-        "pagePath": "pages/home/index",
-        "icon": "assets/order.png",
-        "activeIcon": "assets/order.png"
-      },
-      {
-        "name": "User",
-        "pagePath": "pages/user/index",
-        "icon": "assets/account.png",
-        "activeIcon": "assets/account.png"
-      }
-    ]
-  }
+    "pages": [
+        "pages/splash/index",
+        "pages/home/index",
+        "pages/odersDetail/index",
+        "pages/user/index",
+        "pages/receive/index",
+        "pages/login/index",
+        "pages/receipt/index"
+    ],
+    "window": {
+        "defaultTitle": "",
+        "titleBarColor": "#fff",
+        "backgroundColor": "#F5F7FC",
+        "allowsBounceVertical": "NO"
+    },
+    "tabBar": {
+        "items": [{
+                "name": "Booking Page",
+                "pagePath": "pages/home/index",
+                "icon": "assets/order.png",
+                "activeIcon": "assets/order.png"
+            },
+            {
+                "name": "User",
+                "pagePath": "pages/user/index",
+                "icon": "assets/account.png",
+                "activeIcon": "assets/account.png"
+            }
+        ]
+    }
 }

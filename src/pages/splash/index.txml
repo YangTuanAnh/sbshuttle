@@ -1,0 +1,15 @@
+<view class="container h-screen flex-col m-large">
+  <view style="margin: 40% auto;">
+  <image style="display: block; margin: auto;" src="/assets/splash.jpg"/>
+  <lottie 
+    style="width: 50%; margin: 1rem auto;"
+    id="lottie"
+    loop="{{true}}"
+    autoplay="{{true}}"
+    path="/assets/111719-bullet-loading.json"/>
+    <button type="ghost" class="radius-pill w-full" 
+    style="background-color: crimson; color:white"
+    onTap="splashMove">Next</button>
+  </view>
+  
+</view>
