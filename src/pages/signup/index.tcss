@@ -3,7 +3,7 @@ page {
 }
 
 .container {
- margin-top: 30%;
+ margin-top: 0%;
  margin-left: 4%;
 }
 .container .sign-text {
@@ -53,7 +53,7 @@ page {
 }
 .haveAcc {
   margin-top: 5%;
-  margin-left: 20%;
+  margin-left: 26%;
 }
 
 

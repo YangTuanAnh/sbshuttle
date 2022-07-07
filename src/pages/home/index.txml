@@ -18,11 +18,8 @@
   <text>Booking</text>
 </view>
 <view class ="container-pagesHome">
-  <!--<view class="header" style="background-color: white; height: 180px;">
-    <image class="w-full h-full" src="/assets/icons/2ecff698107ed3208a6f_adobe_express.svg"></image>
-  </view> -->
 
-  <view>
+  < <view class ="slider" style="width: 100%;">
 
    <carousel
     arrows: false
@@ -51,12 +48,13 @@
 
    </carousel>
 
-  </view>
+  </view> 
 
   <view class="next_page" style=" display:flex;">
     <button onTap="" size="medium" id="btn_send"  >Send</button>
     <button onTap="onTap" size="medium" type="ghost" id="btn_receive">Receive</button>
   </view>
+
   <view class="content"><text>Routine</text></view>
   <view class="page-list-content-block">
     <list-item arrow upperSubtitle="Description" onClick="toPageAddress" id ="Getaddress">
@@ -75,20 +73,7 @@
     </list-item>
   </view>
 
-  <!-- header banner-->
-  <!--
-  <view class="destination">
-    <text>Destination</text>
-  </view>
-  <view class="list-item">
-    <view class="myLocation">
-      <textfield shape="pill" placeholder="Your Location" iconLeft="location" iconColor="green" />
-    </view>
-    <view class="storageLocation">
-      <textfield shape ="pill" placeholder="Choose storage to keep package" iconLeft="home" />
-    </view>
-  </view>
--->
+ 
 
   <template id="timenow">
     <view>
@@ -117,14 +102,14 @@
   <view class="info-item w-full">
     <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
     <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="outline" onTap="toPageAddress">Baggage</button>
+      <button  class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;" onTap="toPageAddress">Baggage</button>
       <view class="container-a">
         <checkbox onChange="onChange"/>
       </view>
     </view>
 
     <view class="row-item-b flex flex-row w-full" >
-      <button class="item-b" type="outline">Belongings</button>
+      <button class="item-b" type="ghost" style="background-color:#EEEEEE; color: black;">Belongings</button>
       <view class="container-b">
         <checkbox onChange="onChange" />
       </view>
