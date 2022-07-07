@@ -1,0 +1,9 @@
+{
+  "transparentTitle": "auto",
+  "disableHardwareBack": "YES",
+  "components": true,
+
+    "usingComponents": {
+      "address": "@tiki.vn/tini-ui/es/address/index"
+    }
+}

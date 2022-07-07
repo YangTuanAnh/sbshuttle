@@ -1,14 +1,16 @@
 {
-    "defaultTitle": "Booking page",
-    "titleColor": "black",
+    "defaultTitle": "SB Shuttle",
+    "titleColor": "white",
+    "disableHardwareBack": "NO",
 
-  "components": true,
+    "components": true,
 
-  "usingComponents": {
-    "textfield": "@tiki.vn/tini-ui/es/textfield/index",
-    "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
-    "address": "@tiki.vn/tini-ui/es/address/index",
-    "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
-    "stepper" :"@tiki.vn/tini-ui/es/stepper/index"
-  }
+    "usingComponents": {
+        "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+        "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
+        "address": "@tiki.vn/tini-ui/es/address/index",
+        "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
+        "bottom-sheet": "@tiki.vn/tini-ui/es/bottom-sheet/index",
+        "template": "@tiki.vn/tini-ui/es/template/index"
+    }
 }

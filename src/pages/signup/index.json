@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "SB Shuttle",
+  "titleColor": "black",
+  "titleBarColor": "white",
+  "disableHardwareBack": "NO",
+  "components": true,
+
+  "usingComponents" : {
+    "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+    "pin" : "@tiki.vn/tini-ui/es/pin/index"
+  }
+}

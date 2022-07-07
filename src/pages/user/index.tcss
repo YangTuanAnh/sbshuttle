@@ -1,0 +1,60 @@
+.page {
+  background-color: #fff;
+}
+.content-page {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container-avatar{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.content1{
+  margin-left: 5%;
+}
+.content2{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.content3{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.content4{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.tfUsername {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.tfEmailId {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.tfPhoneNumber {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.tfAddress {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.container-contact {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.container-audio {
+  margin-top: 5%;
+  margin-left: 5%;
+}

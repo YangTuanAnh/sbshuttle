@@ -1,0 +1,36 @@
+<view class="container">
+  <view class = "sign-text"><text>Sign Up</text></view>
+  <view class = "sign-textMini"><text>Please enter your detail</text></view>
+  <view class="tfName">
+    <text>Enter your name account</text>
+    <textfield class ="tfN" id ="name" placeholder="vuongtrananhtuan"></textfield>
+  </view>
+  <view class="tfUsername">
+    <view class ="textPhone">
+      <text>Enter your phone</text>
+    </view>
+    <textfield class ="tfPhone" id ="tfPN" placeholder="+84"></textfield>
+  </view>
+  <view class ="tfPassword">
+    <view class="textPass">
+      <text>Enter your password</text>
+    </view>
+    <textfield class ="tfPass"password="*" id ="tfPW" placeholder="At least 8 characters"></textfield>
+  </view>
+
+  <view class="checkBox">
+    <view class ="row-checkBox" style="display: flexbox;">
+      <checkbox></checkbox>
+      <text class = "rememberText">I agree with service of SB Shuttle </text>
+    </view>
+  </view>
+    <button class="btnSize" >Sign up</button>
+
+    <view class="haveAcc">
+      <label>
+        <navigator open-type="navigate" url="pages/login/index">
+          Already have an Account
+        </navigator>
+      </label>
+    </view>
+</view>

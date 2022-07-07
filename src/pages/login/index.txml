@@ -1,7 +1,10 @@
 <view class="container">
   <view class = "login-text"><text>Login to your Account</text></view>
+  <view>
+    
+  </view>
   <view class="tfUsername">
-    <textfield = placeholder="Email/phone"></textfield>
+    <textfield = placeholder="Enter your phone"></textfield>
   </view>
   <view class ="tfPassword">
     <textfield password="*" placeholder="Password">Password</textfield>
@@ -14,10 +17,10 @@
   </view>
     <button class="btnSize" >Sign In</button>
   <view class="text-forgetPass">
-    <view class="next-page" style="color: dodgerblue;">
+    <view class="next-page">
       <label>
-        <navigator open-type="navigate" url="pages/odersDetail/index">
-          Forget the password ?
+        <navigator open-type="navigate" url="pages/signup/index">
+          Create an account
         </navigator>
       </label>
     </view>

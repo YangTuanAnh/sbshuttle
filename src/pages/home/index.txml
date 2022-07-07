@@ -1,21 +1,70 @@
-<view>
-  <view class="header">
-    <image class="w-full" src="/assets/3968608.jpg"></image>
+
+<template name="bottom-sheet-term">
+ <view>
+   <view class ="px-medium py-2x-small">
+     <text>To start using the utility of SB Shuttle please read</text>
+     <view></view>
+     <text class ="text-blue">{{'Term and Service Use'}}</text>
+     .
+   </view>
+   <view class ="flex-item-center px-medium" style="display: flex;">
+     <checkbox/>
+     <view class ="ml-2x-small">I have read and agree</view>
+   </view>
+
+   </view>
+</template>
+<view class ="content-page">
+  <text>Booking</text>
+</view>
+<view class ="container-pagesHome">
+  <!--<view class="header" style="background-color: white; height: 180px;">
+    <image class="w-full h-full" src="/assets/icons/2ecff698107ed3208a6f_adobe_express.svg"></image>
+  </view> -->
+
+  <view>
+
+   <carousel
+    arrows: false
+    indicator-dots
+    circular : true
+    autoplay : true
+    onChange="onChange"
+   >
+   <carousel-item>
+    <view class="radius-pill">
+      <image class="w-full" mode="aspectFill" src="/assets/icons/2ecff698107ed3208a6f_adobe_express.svg" />
+    </view>
+   </carousel-item>
+
+   <carousel-item>
+    <view class="radius-pill">
+      <image class="w-full" mode="aspectFill" src="/assets/3968608.jpg" />
+    </view>
+   </carousel-item>
+
+   <carousel-item>
+    <view class="radius-pill">
+      <image class="w-full" mode="aspectFill" src="https://img.freepik.com/free-vector/delivery-service-with-masks-concept_23-2148497067.jpg?size=626&ext=jpg&ga=GA1.2.1076335674.1649502331" />
+    </view>
+   </carousel-item>
+
+   </carousel>
+
   </view>
 
-  <view class="next_page" style=" display:inline-flex;">
-    <button onTap="" size="medium" type="ghost" id="btn_send" style="background-color: black;">Send</button>
-    <button onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: white;">Receive</button>
+  <view class="next_page" style=" display:flex;">
+    <button onTap="" size="medium" id="btn_send"  >Send</button>
+    <button onTap="onTap" size="medium" type="ghost" id="btn_receive">Receive</button>
   </view>
   <view class="content"><text>Routine</text></view>
   <view class="page-list-content-block">
-    <list-item arrow upperSubtitle="Description" thumb="assets/avatar.png" thumbSize="40px" onClick="getAddress">
-      <view>Account</view>
+    <list-item arrow upperSubtitle="Description" onClick="toPageAddress" id ="Getaddress">
       <view slot="suffix">
         <view class="text-title text-regular">Get address now</view>
       </view>
       <view slot="prefix">
-        <icon type="location" size="24" color="green" />
+        <icon type="location" size="24" color="red" />
       </view>
     </list-item>
     <list-item arrow upperSubtitle="Description">
@@ -68,16 +117,16 @@
   <view class="info-item w-full">
     <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
     <view class="row-item-a w-full flex flex-row w-full">
-      <button class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;">Baggage</button>
+      <button  class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;" onTap="toPageAddress">Baggage</button>
       <view class="container-a">
-        <stepper onChange="callBackFn" step="{{1}}" showNumber value="{{value}}" inputWidth="60px" min="{{2}}" />
+        <checkbox onChange="onChange"/>
       </view>
     </view>
 
     <view class="row-item-b flex flex-row w-full" >
       <button class="item-b" type="ghost" style="background-color:#EEEEEE; color: black;">Belongings</button>
       <view class="container-b">
-        <stepper onChange="callBackFn" step="{{1}}" showNumber value="{{value}}" inputWidth="60px" min="{{2}}" />
+        <checkbox onChange="onChange" />
       </view>
     </view>
   </view>
@@ -94,14 +143,11 @@
       </text>
     </view>
   </view>
+  <button onTap ="pageLogin" id="send-sub" class="submit">Submit</button>
 
-  <button onTap ="pageLogin" id="send-sub" class="submit" style="background-color:#0099FF;">Submit</button>
-
-  <view class="next-page">
-    <label>
-      <navigator open-type="navigate" url="pages/odersDetail/index">
-        <!-- next -->
-      </navigator>
-    </label>
-  </view>
 </view>
+<block tiki:if"{{showTerm}}">
+  <bottom-sheet show="{{showTerm}}" title="Term and Service Use" buttonTitle="Continue" distanceFromTop="{{100}}" onClose="onClose" onClick="onClickContinue">
+    <template is="bottom-sheet-term" />
+  </bottom-sheet>
+</block>

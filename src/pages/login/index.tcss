@@ -35,7 +35,7 @@ background-color: #EEEEEE ;
 }
 .next-page {
   margin-top: 5%;
-  margin-left: 24%;
+  margin-left: 28%;
 }
 .text-foot {
   margin-top: 15%;

@@ -1,11 +1,15 @@
 {
-  "defaultTitle": "This is a page",
-  "transparentTitle": "auto",
-  "titleBarColor": "#1B6BFF",
-  "titleColor": "#fff",
+  "defaultTitle": "SB Shuttle",
+  "titleBarColor": "#DC143C",
+  "titleColor": "white",
   "disableHardwareBack": "NO",
 
-  "components" : true,
-  "usingComponent" :{
+  "components": true,
+
+  "usingComponents" : {
+    "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+    "avatar": "@tiki.vn/tini-ui/es/avatar/index",
+    "uploader": "@tiki.vn/tini-ui/es/uploader/index",
+    "list-item": "@tiki.vn/tini-ui/es/list/list-item/index"
   }
 }

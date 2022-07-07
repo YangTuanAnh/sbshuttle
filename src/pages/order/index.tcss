@@ -1,0 +1,17 @@
+page {
+  background-color: #fff;
+}
+
+.tab-item {
+  height: 300px;
+  background-color: whiteSmoke;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+

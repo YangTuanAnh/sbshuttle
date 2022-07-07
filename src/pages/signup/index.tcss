@@ -1,0 +1,61 @@
+page {
+  background-color: #fff;
+}
+
+.container {
+ margin-top: 30%;
+ margin-left: 4%;
+}
+.container .sign-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+.sign-textMini {
+  font-size: 13px;
+  color: grey;
+}
+.tfName {
+  margin-top: 10%;
+}
+.tfName .tfN {
+  margin-top: 10px;
+  max-width: 95%;
+}
+.textPhone {
+  margin-top: 2%;
+}
+.container .tfUsername {
+ width: 95%;  
+ margin-top: 5%;
+}
+.tfUsername .tfPhone {
+  margin-top: 2%;
+}
+.tfPassword {
+ width: 95%;
+ margin-top: 5%;
+}
+.tfPassword .tfPass {
+  margin-top: 10px;
+}
+.checkBox {
+  margin-top: 8%;
+  margin-left: 0;
+}
+.rememberText {
+  margin-top: 20px;
+  margin-left: 5%;
+}
+.btnSize {
+  border-radius: 9999px;
+  margin-top: 8% ;
+  width: 95%;
+}
+.haveAcc {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+
+
+

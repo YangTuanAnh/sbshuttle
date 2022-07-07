@@ -1,8 +1,7 @@
 {
-  "defaultTitle": "This is a page",
-  "transparentTitle": "auto",
-  "titleBarColor": "#1B6BFF",
-  "titleColor": "#fff",
+  "defaultTitle": "SB Shuttle",
+  "titleColor": "black",
+  "titleBarColor": "white",
   "disableHardwareBack": "NO",
   "components": true,
 

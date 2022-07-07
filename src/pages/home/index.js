@@ -1,5 +1,6 @@
 Page({
     data: {
+      showTerm : true,
         selected1: "AM",
         items1: ["AM", "PM"],
 
@@ -9,10 +10,15 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
-
         location: undefined
-    },
 
+
+    },
+    onReady(){
+      my.hideTabBar({
+        animation: false
+      })
+    },
     onSelect1(selected1) {
         this.setData({
             selected1
@@ -23,40 +29,48 @@ Page({
             selected2
         });
     },
-    onChangeAddress(address) {
-        console.log('address :', address);
+    onClose() {
+      this.setData({
+        showTerm: false,
+      });
     },
-    onFullAddress(address) {
-        console.log('full address :', address);
+    onClickContinue(e) {
+     this.setData ({
+       showTerm : false
+     })
+     my.showTabBar ({
+       animation : true
+     })
     },
-    onChange(e) {
-        console.log('onChange', e);
-    },
+   
 
-
-    onClick(event) {
-        console.log('onClick Chip', event);
-    },
     onRightClick(event) {
         console.log('onRightClick Image/Icon', event);
     },
     onLeftClick(event) {
         console.log('onLeftClick Image/Icon', event);
     },
-    handleTap() {
-        console.log("tap!")
-    },
     onTap(event) {
         my.createSelectorQuery()
             .select(event.currentTarget.id)
             .exec((ret) => {
-                if (event.currentTarget.id == 'btn_receive')
-                    my.navigateTo({
-                        url: "pages/receive/index"
-                    })
+                my.navigateTo({
+                    url: "pages/receive/index"
+                })
             })
     },
-    getAddress(event) {
+
+    toPageAddress(event) {
+      my.createSelectorQuery()
+          .select(event.currentTarget.id)
+          .exec((ret) => {
+              my.navigateTo({
+                  url: "pages/getAddress/index"
+              })
+          })
+  },
+    //fucntion tester address
+    /*getAddress(event) {
         my.getLocation({
             cacheTimeout: 30,
             success: (res) => {
@@ -70,14 +84,19 @@ Page({
             }
         });
     },
+    */
 
     pageLogin(event) {
-        my.createSelectorQuery()
-            .select(event.currentTarget.id)
-            .exec((ret) => {
-                my.navigateTo({
-                    url: "pages/login/index"
-                })
-            })
-    }
+      my.createSelectorQuery()
+          .select(event.currentTarget.id)
+          .exec((ret) => {
+              my.navigateTo({
+                  url: "pages/receive/index"
+              })
+          })
+      },
+
+      onChange(e) {
+        console.log('onChange: ', e);
+      }
 });

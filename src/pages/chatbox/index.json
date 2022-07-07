@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "SB Shuttle",
+  "titleBarColor": "#DC143C",
+  "titleColor": "white",
+  "disableHardwareBack": "NO",
+  "components": true,
+
+  "usingComponents" : {
+    "avatar": "@tiki.vn/tini-ui/es/avatar/index"
+  }
+}

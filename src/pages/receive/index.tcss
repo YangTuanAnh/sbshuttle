@@ -1,3 +1,115 @@
 page {
   background-color: #fff;
 }
+
+.content-page {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.content-gernerate {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.formInfoCustomer {
+  margin-left: 5%;
+}
+.input1 {
+  margin-top:  5%;
+}
+.input2 {
+  margin-top:  5%;
+}
+.input3 {
+  margin-top:  5%;
+}
+.inputArea {
+  margin-top:  5%;
+}
+
+.tfname {
+  margin-top: 2%;
+  max-width: 95%;
+}
+.tfPhone {
+  margin-top: 2%;
+  max-width: 95%;
+}
+.tfAddress {
+  margin-top: 2%;
+  max-width: 95%;
+}
+.tfNote {
+  margin-top: 2%;
+  max-width: 100%;
+}
+
+/*---------------------------*/
+.content-baggage {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.formInfoBaggage {
+  margin-left: 5%;
+}
+.input5 {
+  margin-top: 5%;
+}
+
+.dropBagge {
+  margin-top: 5%;
+  max-width: 65%;
+  margin-left: 0%
+}
+
+.tittle2 {
+  margin-top: 5%;
+}
+.btnChooseImg {
+  border-radius: 5px;
+}
+.input6 {
+  margin-top: 5%;
+}
+
+.textDelivery {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.optionSheet {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.btnVehicle {
+  border-radius: 5px;
+}
+.btnDeli {
+  border-radius: 5px;
+  margin-left: 5%;
+}
+
+.info-total {
+  margin-top: 40px;
+}
+
+.info-total .text-tatal {
+  margin-left: 20px;
+}
+
+.info-total .cost-booking {
+  margin-left: 150px;
+  font-weight: bold;
+}
+
+.submit {
+  border-radius: 8px;
+  width: 90%;
+  margin: 5% auto;
+}

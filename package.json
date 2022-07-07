@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@tiki.vn/tini-ui": "^0.12.0"
+  },
+  "tiki": {
+    "appIdentifier": "vn.tiki.miniapp.sbs",
+    "buildNumber": 1
   }
 }

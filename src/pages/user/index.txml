@@ -1,3 +1,47 @@
-<view class="container">
-  
+<view class ="content-page">
+  <text>Personal information</text>
+</view>
+<view>
+  <view class ="container-avatar">
+    <uploader style="width: 160px; height: 150px; border-radius: 100%;" iconSize="40">
+      <view class="flex items-center px-2x-small">
+        <icon type="info" class="mr-2x-small"/>
+        <text>Select image</text>
+      </view>
+    </uploader>
+  </view>
+  <view class="container-form">
+    <view class ="content1">
+      Username
+    </view>
+    <view class ="tfUsername">
+      <textfield class ="text1" id ="tfUsn"></textfield>
+    </view>
+    <view class ="content2">
+      Email
+    </view>
+    <view class ="tfEmailId">
+      <textfield id ="tfPass"></textfield>
+    </view>
+    <view class ="content3">
+      Phone
+    </view>
+    <view class ="tfPhoneNumber">
+      <textfield id ="tfPhone"></textfield>
+    </view>
+    <view class ="content4">
+      Address
+    </view>
+    <view class ="tfAddress">
+      <textfield id ="tfAddr"></textfield>
+    </view>
+  </view>
+  <!-- Lien he voi shuttle-->
+  <view class ="container-contact">
+    <list-item arrow upperSubtitle="Support center" thumb="assets/support.png" thumbSize="40px" onClick="toPageAddress" id ="Getaddress">
+    </list-item>
+  </view>
+  <view class ="container">
+    <audio id="audio1" src="/audio/Stay - The Kid LAROI_ Justin Bieber.mp3" name="Sample Audio" author="Unknown" loop="true"/>
+  </view>
 </view>

@@ -1,71 +1,131 @@
-<view class="container">
+<template name="bottom-sheet-picker1">
+  <picker-view>
+    <picker-view-column>
+     <view>Movin van</view>
+     <view>Motobike</view>
+    </picker-view-column>
+  </picker-view>
+</template>
 
-  <view class="w-full flex justify-center items-center py-small">
-    <button class="mr-large radius-pill text-black" onTap="onTap" size="medium" type="ghost" id="btn_send" style="background-color: white;">Send</button>
-    <button class="radius-pill text-white" onTap="onTap" size="medium" type="ghost" id="btn_receive" style="background-color: black;">Receive</button>
-  </view>
-  <view>
-    <text class=" ml-large text-large font-bold mt-large">Your Number</text>
-    <textfield class="mx-large"></textfield>
-  </view>
+<template name="bottom-sheet-picker2">
+  <picker-view>
+    <picker-view-column>
+      <view>SB NOW (Within 2 hour)</view>
+      <view>SB STANDARD (Within 4 hour)</view>
+    </picker-view-column>
+  </picker-view>
+</template>
 
-  <view class="ml-large text-large font-bold mt-large"><text>Routine</text></view>
-  <view class="page-list-content-block mx-large">
-    <list-item arrow upperSubtitle="Description" thumb="assets/avatar.png" thumbSize="40px" onClick="getAddress">
-      <view>Account</view>
-      <view slot="suffix">
-        <view class="text-title text-regular">Get address now</view>
-      </view>
-      <view slot="prefix">
-        <icon type="location" size="24" color="green" />
-      </view>
-    </list-item>
-    <list-item arrow upperSubtitle="Description">
-      <view>Storage</view>
-      <view slot="prefix">
-        <icon type="home" size="24" color="red" />
-      </view>
-    </list-item>
-  </view>
-  <view class="inline-flex">
-  <button class="radius-pill mx-large mt-large inline" style="width: 75%">Calculate Distance</button>
-  <textfield disabled="true" class="mr-large inline mt-large"></textfield>
+
+
+<view class ="content-page">
+  <text>Receive</text>
 </view>
-  <view class="pick">
-    <view class="ml-large text-large font-bold mt-large mb-small"><text>Pick up</text></view>
-    <view class="container-pick mx-large inline-flex" >
 
-      <view class="font-bold mr-large text-medium items-center">Time</view>
-      <dropdown class="am-pm mr-small" bottomSheetTitle=" Choose timeline" shape="rounded" maskClose="{{false}}"
-        bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="AM/PM" />
-      <!-- Pick time when customer arrived airport-->
-
-      <dropdown class="time" bottomSheetTitle=" Choose time" shape="rounded" maskClose="{{false}}"
-        bottomSheetHeight="300" items="{{items2}}" value="{{selected2}}" onSelect="onSelect2"
-        placeholder="1:00 - 2:00" />
-    </view>
+<view class="container">
+  <view class="w-full flex justify-center items-center py-small">
+    <button class="radius-pill text-black" onTap="onTap" size="medium" type="ghost">Send</button>
+    <button class="radius-pill text-white" onTap="onTap" size="medium"  id="btn_receive" >Receive</button>
   </view>
 
-  <view class="mt-large mx-large">
-    <text class="text-large font-bold mt-large mb-small">Service Type</text>
-    <button class="w-full radius-pill mt-small" type="outline">SB NOW (Within 2h)</button>
-    <button class="w-full radius-pill mt-small" type="outline">SB STANDARD (Within 4h)</button>
+  <view class ="content-gernerate">
+    <text class="textInfo1">General information</text>
   </view>
 
-  <view class="mx-large mt-large">
-    <view class="row-total flex-inline">
-      <text class="font-bold text-medium w-full mr-large">
+  <view class ="formInfoCustomer">
+    <form>
+      <view class ="input1">
+        <view>Recipient's name</view>
+        <textfield class ="tfname"name ="name" placeholder="Mr Tuan"></textfield>
+      </view>
+      <view class ="input2">
+        <view>Phone number to contact</view>
+        <textfield  class ="tfPhone" name ="phone" placeholder="+84"></textfield>
+      </view>
+      <view class ="input3">
+        <view>Delivery address</view>
+        <textfield class ='tfAddress' name ="address" placeholder="Street / Distric / City"></textfield>
+      </view>
+      <view class ="inputArea">
+        <view>Note</view>
+        <textarea class ="tfNote" placeholder="Title"></textarea>
+      </view>
+    </form>
+  </view>
+  <view></view>
+
+ 
+  <view class ="content-baggage">
+    <text class="textInfo2">The baggage</text>
+  </view>
+
+  <view class ="formInfoBaggage">
+    <form>
+      <view class ="input5">
+        <view class ="title1">Heavy baggage</view>
+        <dropdown class="dropBagge" bottomSheetTitle=" How many weight" shape="rounded" maskClose="{{false}}"
+          bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="23kg under"/>
+      </view>
+
+      <view class ="input4Img">
+        <!-- Choose image of Baggage-->
+        <view class ="tittle2"><text>Baggage image</text></view>
+
+        <view class ="input6">
+          <view class="">
+            <button class="btnChooseImg" onTap="onChooseImage" type="ghost" style ="background-color: Gainsboro; color: black;" size="small" Solid(small)>Choose Image</button>
+          </view>
+          <block tiki:for="{{imgs}}">
+            <image src="{{item}}" />
+          </block>
+        </view>
+
+      </view>
+
+    </form>
+  </view>
+
+  <view></view>
+
+  <!--Choose Delivery vehicle-->
+  <view class ="textDelivery"><text class="content-service">Service Type</text></view>
+  
+  <view class ="deliveryInfo">
+    <form>
+      <view class ="input7">
+        <view class ="optionSheet">
+          <view class="list-button" style="display: flex;">
+            <button class ="btnVehicle" type="ghost" size="medium" Solid(medium) data-template="picker1" style="background-color: Gainsboro; color: black;" onTap="onClickFinished1">Vehicle</button>
+            <button class ="btnDeli" type="ghost" size="medium" Solid(medium) data-template="picker2" style="background-color: Gainsboro; color: black;"onTap="onClickFinished2">Delivery</button>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+  
+  <!-- Total bill-->
+  <view class="info-total">
+    <view class="row-total">
+      <text class="text-tatal">
         Total price
       </text>
-      <text class="cost-booking ml-large w-full">
+      <text class="cost-booking">
         <!-- booking $ -->
         ${{100.12}}
       </text>
     </view>
   </view>
+  <button onTap ="pageLogin" id="send-sub-login" class="submit" >Payment</button>
 
-  <view class="mx-large">
-    <button class="mt-large w-full radius-pill" onTap="onSubmit">Submit</button>
-  </view>
   
 </view>
+
+  <!-- Bottom sheet for option-->
+  <bottom-sheet show="{{showOption1}}" title="Vehicle" buttonTitle="Finished"  distanceFromTop="{{100}}" onClose="onClickClose1" onClick="onClickClose1">
+    <template is="bottom-sheet-picker1" />
+  </bottom-sheet>
+
+  <bottom-sheet show="{{showOption2}}" title="Methob" buttonTitle="Finished" distanceFromTop="{{100}}" onClose="onClickClose2" onClick="onClickClose2">
+    <template is="bottom-sheet-picker2" />
+  </bottom-sheet>
+

@@ -1,0 +1,12 @@
+{
+    "defaultTitle": "SB Shuttle",
+    "titleColor": "white",
+    "disableHardwareBack": "NO",
+    "components": true,
+
+    "usingComponents": {
+        "block-header": "components/block-header/index",
+        "tabs": "@tiki.vn/tini-ui/es/tabs/index",
+        "tab-content": "@tiki.vn/tini-ui/es/tabs/tab-content/index"
+    }
+}

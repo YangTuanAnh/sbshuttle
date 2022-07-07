@@ -1,0 +1,30 @@
+
+<view class ="container-order">
+  <view class="container-tabs">
+    <tabs tabs="{{tabs1}}"
+      tabsName="activeTab1"
+      activeTab="{{activeTab1}}"
+      onTabClick="onTabClick"
+      swipeable="{{false}}">
+      <block tiki:for="{{tabs1}}">
+        <tab-content tabId="{{index}}">
+          <!-- There class table at where -->
+          <view class="tab-item">
+            <view>
+              <image src="assets/lug.png"></image>
+            </view>
+          </view>
+        </tab-content>
+      </block>
+    </tabs>
+  </view>
+
+  <view class="next-page" style="font-size: large; font-weight: bold; margin-top: 20%;">
+    <label>
+      <navigator open-type="navigate" url="pages/odersDetail/index">
+       to oders Detail =>
+      </navigator>
+    </label>
+  </view>
+
+</view>
