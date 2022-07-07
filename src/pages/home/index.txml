@@ -58,8 +58,9 @@
   <view class="content"><text>Routine</text></view>
   <view class="page-list-content-block">
     <list-item arrow upperSubtitle="Description" onClick="toPageAddress" id ="Getaddress">
+      <view>Address</view>
       <view slot="suffix">
-        <view class="text-title text-regular">Get address now</view>
+        <button class="text-title text-regular" type="ghost" shape="pill">Get address now</button>
       </view>
       <view slot="prefix">
         <icon type="location" size="24" color="red" />
