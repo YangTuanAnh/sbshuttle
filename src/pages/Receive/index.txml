@@ -24,8 +24,8 @@
 
 <view class="container">
   <view class="w-full flex justify-center items-center py-small">
-    <button class="radius-pill text-black" onTap="onTap" size="medium" type="ghost">Send</button>
-    <button class="radius-pill text-white" onTap="onTap" size="medium"  id="btn_receive" >Receive</button>
+    <button class="radius-pill text-black" onTap="onTap" size="medium" id="btn_send" type="ghost">Send</button>
+    <button class="radius-pill text-white" size="medium"  id="btn_receive" >Receive</button>
   </view>
 
   <view class ="content-gernerate">

@@ -117,14 +117,14 @@
   <view class="info-item w-full">
     <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
     <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;" onTap="toPageAddress">Baggage</button>
+      <button  class="item-a" type="outline" onTap="toPageAddress">Baggage</button>
       <view class="container-a">
         <checkbox onChange="onChange"/>
       </view>
     </view>
 
     <view class="row-item-b flex flex-row w-full" >
-      <button class="item-b" type="ghost" style="background-color:#EEEEEE; color: black;">Belongings</button>
+      <button class="item-b" type="outline">Belongings</button>
       <view class="container-b">
         <checkbox onChange="onChange" />
       </view>
