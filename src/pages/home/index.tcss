@@ -5,31 +5,18 @@
   font-weight: bold;
   font-size: 20px;
 }
-.tab-item {
-    height: 104px;
-    background-color: #fff;
-}
 
-.mb-8 {
-    margin-bottom: 8px;
-}
 
-.mt-16 {
-    margin-top: 16px;
-}
-
-.gray10 {
-    background-color: var(--gray10);
-}
 
 
 .next_page {
     margin-top: 10px;
+    margin-left: 10%;
 }
 
 #btn_send {
 
-    margin-left: 100px;
+    margin-left: 26%;
     border-radius: 15px;
     color: white;
 }
@@ -44,28 +31,28 @@
 
 .content {
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
     font-size: 18px;
 }
 
 .list-item {
-    margin-top: 10px;
-    margin-left: 9px;
-    max-width: 95%;
+    margin-top: 5%;
+    margin-left: 9%;
+    max-width: 90%;
 }
 
 .list-item .storageLocation {
-    margin-top: 10px;
+    margin-top: 10%;
 }
 
 .item-information {
-    margin-left: 9px;
-    margin-top: 10px;
+    margin-left: 9%;
+    margin-top: 10%;
 }
 
 .item-information .drop {
-    margin-top: 10px;
+    margin-top: 10%;
     width: 50%;
 }
 
@@ -83,8 +70,8 @@
 
 .pick {
     font-weight: bold;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .pick .pick-up-time {
@@ -93,9 +80,9 @@
 }
 
 .am-pm {
-    margin-top: 10px;
+    margin-top: 3%;
     max-width: 30%;
-    margin-left: 20px;
+    margin-left: 10%;
 }
 
 .container-pick {

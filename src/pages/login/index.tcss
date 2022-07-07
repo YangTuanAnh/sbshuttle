@@ -3,7 +3,7 @@ page {
 }
 
 .container {
- margin-top: 30%;
+ margin-top: 0%;
  margin-left: 4%;
 }
 .container .login-text {
@@ -22,11 +22,11 @@ background-color: #EEEEEE ;
 }
 .checkBox {
   margin-top: 8%;
-  margin-left: 20%;
+  margin-left: 22%;
 }
 .rememberText {
   margin-top: 20px;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 .btnSize {
   border-radius: 9999px;
@@ -35,15 +35,15 @@ background-color: #EEEEEE ;
 }
 .next-page {
   margin-top: 5%;
-  margin-left: 28%;
+  margin-left: 32%;
 }
 .text-foot {
   margin-top: 15%;
-  margin-left: 30%;
+  margin-left: 35%;
 }
 .select-btn {
   margin-top: 5%;
-  margin-left: 8%;
+  margin-left: 16%;
 }
 .select-btn .fb {
   border-radius: 10px;
