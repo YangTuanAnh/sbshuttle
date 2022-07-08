@@ -5,10 +5,10 @@
   margin-top: 5%;
   margin-left: 5%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 .container-avatar{
-  margin-left: 25%;
+  margin-left: 30%;
   margin-top: 5%;
 }
 
@@ -50,11 +50,28 @@
 
 .container-contact {
   margin-top: 5%;
-  margin-left: 5%;
-  width: 90%;
+  width: 100%;
 }
 
 .container-audio {
   margin-top: 5%;
+  margin-left: 5%;
+}
+.content-ac {
+  margin-top: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.container-acount {
+  margin-left: 5%;
+}
+.content-general {
+  margin-top: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.container-general {
   margin-left: 5%;
 }

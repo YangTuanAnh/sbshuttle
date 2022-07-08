@@ -37,11 +37,24 @@
     </view>
   </view>
   <!-- Lien he voi shuttle-->
-  <view class ="container-contact">
-    <list-item arrow upperSubtitle="Support center" thumb="assets/support.png" thumbSize="40px" onClick="toPageAddress" id ="Getaddress">
+  <view class ="content-ac">Account</view>
+
+  <view class ="container-acount">
+    <list-item arrow upperSubtitle="Order" thumb="assets/icons8-order-history-58.png" thumbSize="30px" onClick="" id ="order">
+    </list-item>
+  
+    <list-item arrow upperSubtitle="Payment methob" thumb="assets/coupon_icon.png" thumbSize="30px" onClick="" id ="getAddress">
+    </list-item>
+  
+    <list-item arrow upperSubtitle="Account Manage" thumb="/assets/profile.png" thumbSize="30px" onClick="" id ="getAddress">
     </list-item>
   </view>
-  <view class ="container">
-    <audio id="audio1" src="/audio/Stay - The Kid LAROI_ Justin Bieber.mp3" name="Sample Audio" author="Unknown" loop="true"/>
-  </view>
+
+ <view class ="content-general">General infomation</view>
+ <view class ="container-general">
+   <list-item arrow upperSubtitle="Support center" thumb="assets/support.png" thumbSize="30px" onClick="" id ="support"></list-item>
+
+   <list-item arrow upperSubtitle="Rating Application" thumb="/assets/star.png" thumbSize="30px" onClick="" id ="rating"></list-item>
+   
+ </view>
 </view>

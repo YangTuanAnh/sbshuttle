@@ -14,4 +14,7 @@ page {
 .mt-16 {
   margin-top: 16px;
 }
+.next-page-detail {
+  margin-left: 2%;
+}
 

@@ -10,21 +10,31 @@
         <tab-content tabId="{{index}}">
           <!-- There class table at where -->
           <view class="tab-item">
+
+            <!-- 
             <view>
               <image src="assets/lug.png"></image>
+            </view> 
+          -->
+
+            <view class="next-page-detail";  style="margin-top: 5%;">
+              <view class ="container-order" style="border-radius: 12px; background-color: lightgrey; max-width: 85%;">
+                <label>
+                  <navigator  open-type="navigate" url="pages/odersDetail/index">
+                  <view class ="itemAll" style="font-size: 14px;">
+                    <view id ="item1">Package ID : SBS926485</view>
+                    <view id ="item2">Address : 227 Nguyen Van Cu Q10 </view>
+                    <view id ="item3">Delivery : SB Shuttle </view>
+                    <view id ="item4">Total price : $100.12</view>
+                  </view>
+                  </navigator>
+                </label>
+              </view>
             </view>
+
           </view>
         </tab-content>
       </block>
     </tabs>
   </view>
-
-  <view class="next-page" style="font-size: large; font-weight: bold; margin-top: 20%;">
-    <label>
-      <navigator open-type="navigate" url="pages/odersDetail/index">
-       to oders Detail =>
-      </navigator>
-    </label>
-  </view>
-
 </view>

@@ -14,12 +14,12 @@
 
    </view>
 </template>
-<view class ="content-page">
+<view class ="content-page-home">
   <text>Booking</text>
 </view>
-<view class ="container-pagesHome">
+<view class ="container">
 
-  < <view class ="slider" style="width: 100%;">
+  <view class ="slider" style="width: 100%;">
 
    <carousel
     arrows: false
@@ -50,38 +50,40 @@
 
   </view> 
 
-  <view class="next_page" style=" display:flex;">
-    <button onTap="" size="medium" id="btn_send"  >Send</button>
-    <button onTap="onTap" size="medium" type="ghost" id="btn_receive">Receive</button>
+  <view class="w-full flex justify-center items-center py-small" style="margin-left: -10%;">
+    <button class="radius-pill text-black" size="medium" id="btn_send" type="">Send</button>
+    <button class="radius-pill text-white" onTap="onTap" size="medium"  id="btn_receive" type="ghost">Receive</button>
   </view>
 
-  <view class="content"><text>Routine</text></view>
-  <view class="page-list-content-block">
-    <list-item arrow upperSubtitle="Description" onClick="toPageAddress" id ="Getaddress">
+  <!-- <view class="next_page" style=" display:flex;">
+    <button onTap="" size="medium" id="btn_send"  >Send</button>
+    <button onTap="onTap" size="medium" type="ghost" id="btn_receive">Receive</button>
+  </view> -->
+
+  <view class="content-routine"><text>Routine</text></view>
+
+  <view class="container-location" style="max-width:100%;">
+
+    <list-item padding="true" arrow upperSubtitle="317 Nguyen Van Luong P12 Q6" onClick="" id ="Getaddress">
       <view>Address</view>
       <view slot="suffix">
-        <button class="text-title text-regular" type="ghost" shape="pill">Get address now</button>
+        <button class="text-title text-regular" type="solid" style="border-radius: 15px;" onTap="toPageAddress">Get address now</button>
       </view>
       <view slot="prefix">
         <icon type="location" size="24" color="red" />
       </view>
     </list-item>
-    <list-item arrow upperSubtitle="Description">
+
+    <list-item padding="true "arrow upperSubtitle="Storage Ben Thanh">
       <view>Storage</view>
       <view slot="prefix">
         <icon type="home" size="24" color="red" />
       </view>
     </list-item>
+
   </view>
 
  
-
-  <template id="timenow">
-    <view>
-      <input type="textfield" disabled="false"></input>
-    </view>
-
-  </template>
 
   <view class="pick">
     <view class="pick-up-time"><text>Pick up</text></view>
@@ -98,18 +100,24 @@
     </view>
   </view>
 
-  <!-- Item info-->
+  <!-- Display time be picked-->
+  
+  <view class="pickedtime" style="font-weight: bold; font-size: 12px;">
+      <label><text id ="getTime">1:00 - 2:00 / PM</text></label>
+  </view>
 
-  <view class="info-item w-full">
+
+  <!-- Item info-->
+  <view class="info-item">
     <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
     <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;" onTap="toPageAddress">Baggage</button>
+      <button  class="item-a" type="ghost" style="background-color:#EEEEEE; color: black;">Baggage</button>
       <view class="container-a">
         <checkbox onChange="onChange"/>
       </view>
     </view>
 
-    <view class="row-item-b flex flex-row w-full" >
+    <view class="row-item-b flex" >
       <button class="item-b" type="ghost" style="background-color:#EEEEEE; color: black;">Belongings</button>
       <view class="container-b">
         <checkbox onChange="onChange" />

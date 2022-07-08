@@ -1,33 +1,26 @@
-<!-- <view class="container">
-  <address
-  streetErrorMsg="{{streetErrorMsg}}"
-  cityErrorMsg="{{cityErrorMsg}}"
-  districtErrorMsg="{{districtErrorMsg}}"
-  wardErrorMsg="{{wardErrorMsg}}"
-  streetLabel="Địa chỉ nhận hàng"
-  streetPlaceholder="Nhập số nhà, tên đường..."
-  street="{{street}}"
-  city="{{city}}"
-  district="{{district}}"
-  ward="{{ward}}"
-  full_name="{{full_name}}"
-  phone_number="{{phone_number}}"
-  onChangeAddress="onChangeAddress"
-  onFullAddress="onFullAddress" />
-</view> -->
-
-<view>
-  <view class="block-content">
-    <button class="button-full" onTap="onGetLocation">Get User Location</button>
+<view class="container">
+  <view class="block">
+    <map
+      class="map"
+      onTap="onTap"
+      onMarkerTap="onMarkerTap"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      zoom="{{zoom}}"
+      markers="{{markers}}"
+      polyline="{{polyline}}"
+      polygon="{{polygon}}"
+      circles="{{circles}}"
+      apiKey="{{apiKey}}" />
   </view>
-  <view class="block-content" hidden={{!location}}>
-    <view class="title mb-8">Current location:</view>
-    <text class="text-full">Latitude:{{location.latitude}}</text>
-    <text class="text-full">Longitude:{{location.longitude}}</text>
-    <text class="text-full">Altitude:{{location.altitude}}</text>
-    <text class="text-full">Accuracy:{{location.accuracy}}</text>
-    <text class="text-full">Altitude Accuracy:{{location.altitudeAccuracy}}</text>
-    <text class="text-full">Heading:{{location.heading}}</text>
-    <text class="text-full">Speed:{{location.speed}}</text>
+
+  <view class="block">
+    <view class="actions">
+      <button onTap="resetMap">Reset Map</button>
+      <button onTap="showMarker">Marker</button>
+      <button onTap="showPolygon">Polygon</button>
+      <button onTap="showPolyline">Polyline</button>
+      <button onTap="showCircle">Circle</button>
+    </view>
   </view>
 </view>

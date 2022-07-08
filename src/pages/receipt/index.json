@@ -1,6 +1,8 @@
 {
     "defaultTitle": "Receipt",
     "titleColor": "black",
+
+    "components": true,
     "usingComponents": {
         "textfield": "@tiki.vn/tini-ui/es/textfield/index",
         "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",

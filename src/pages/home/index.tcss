@@ -1,12 +1,10 @@
 
-.content-page {
+.content-page-home{
   margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 4%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
-
-
 
 
 .next_page {
@@ -29,11 +27,15 @@
 
 }
 
-.content {
+.content-routine {
     font-weight: bold;
     margin-top: 5%;
     margin-left: 5%;
     font-size: 18px;
+}
+.container-location {
+  margin-top: 5%;
+  margin-left: 1%;
 }
 
 .list-item {
@@ -56,17 +58,6 @@
     width: 50%;
 }
 
-.next_page {
-    margin-top: 5%;
-    max-width: 100%;
-    height: 20%;
-    
-}
-
-.banner-ad {
-    width: 90%;
-    margin-left: 5%;
-}
 
 .pick {
     font-weight: bold;
@@ -76,7 +67,7 @@
 
 .pick .pick-up-time {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 5%;
 }
 
 .am-pm {
@@ -86,75 +77,76 @@
 }
 
 .container-pick {
-    margin-left: 50px;
+    margin-left: 14%;
 }
 
 .time-text {
     font-size: 14px;
-    margin-left: -50px;
-    margin-top: 20px;
+    margin-left: -16%;
+    margin-top: 6%;
 }
 
 .container-pick .time {
-    max-width: 55%;
-    margin-left: 15px;
+    max-width: 48%;
+    margin-left: 6%;
     margin-top: 10px;
 }
+.container .am-pm {
+  max-width: 30%;
+}
+
 
 .info-item {
-    margin-top: 30px;
+    margin-top: 5%;
     margin-left: 20px;
 }
 
 .info-item .row-item-a {
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .info-item .row-item-b {
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
-.info-item-b {
-    margin-top: 30px;
-}
 
 .container-a {
     margin-top: 4%;
     max-width: 40%;
-    margin-left: 45px;
+    margin-left: 5%;
 }
 
 .container-b {
     max-width: 40%;
     margin-top: 2%;
-    margin-left: 45px;
+    margin-left: 5%;
 }
 
 .item-a {
-    margin-top: 5px;
+    margin-top: 2%;
     font-size: 12px;
-    width: 100px;
+    width: 34%;
     height: 30px;
     border-radius: 20px;
 }
 
 .item-b {
     font-size: 12px;
-    width: 100px;
+    width: 34%;
     height: 30px;
     border-radius: 20px;
 }
 
 .info-total {
-    margin-top: 40px;
+    margin-top: 5%;
 }
 
 .info-total .text-tatal {
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .info-total .cost-booking {
-    margin-left: 150px;
+    margin-left: 50%;
     font-weight: bold;
 }
 
@@ -163,77 +155,7 @@
     width: 90%;
     margin: 5% auto;
 }
-
-/* ----------------------------------------*/
-
-.page-list-header {
-    background-color: var(--white);
-    padding: var(--space-stack-small);
-    margin-bottom: var(--space-stack-2x-small);
+.pickedtime {
+  margin-left: 55%;
+  margin-top: 2%;
 }
-
-.page-list-header-title {
-    font-style: var(--font-style-normal);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-large);
-    line-height: var(--font-height-large);
-}
-
-.page-list-header-content {
-    margin-top: var(--space-stack-2x-small);
-    font-style: var(--font-style-normal);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-base);
-    line-height: var(--font-height-base);
-}
-
-.page-list-content {
-    padding: var(--space-stack-small);
-}
-
-.page-list-content-title {
-    font-style: var(--font-style-normal);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-large);
-    line-height: var(--font-height-large);
-    margin-bottom: var(--space-stack-medium);
-}
-
-.page-list-content-block {
-    margin-top: 20px;
-    background-color: var(--white);
-    padding: var(--space-stack-medium);
-    padding-bottom: var(--space-stack-large);
-    border-radius: var(--radius-rounded-8px, 8px);
-    margin-bottom: var(--space-stack-medium);
-    border: 1px solid var(--gray20);
-}
-
-.page-list-content-block-title {
-    font-style: var(--font-style-normal);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-base);
-    line-height: var(--font-height-base);
-    margin-bottom: var(--space-stack-2x-small);
-}
-
-.page-list-content-block button {
-    border-radius: var(--radius-rounded-4px, 4px);
-}
-
-.text-title {
-    font-style: var(--font-style-normal);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-base);
-    line-height: var(--font-height-base);
-    color: var(--text-list-primary, var(--gray100));
-}
-
-.text-bold {
-    font-weight: var(--font-weight-bold);
-}
-
-.text-regular {
-    font-weight: var(--font-weight-regular);
-}
-
