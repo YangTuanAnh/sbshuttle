@@ -40,10 +40,10 @@
   <view class ="content-ac">Account</view>
 
   <view class ="container-acount">
-    <list-item arrow upperSubtitle="Order" thumb="assets/icons8-order-history-58.png" thumbSize="30px" onClick="" id ="order">
+    <list-item arrow upperSubtitle="Order" thumb="/assets/purchase-order.png" thumbSize="30px" onClick="" id ="order">
     </list-item>
   
-    <list-item arrow upperSubtitle="Payment methob" thumb="assets/coupon_icon.png" thumbSize="30px" onClick="" id ="getAddress">
+    <list-item arrow upperSubtitle="Payment methob" thumb="/assets/mobile-payment.png" thumbSize="30px" onClick="" id ="getAddress">
     </list-item>
   
     <list-item arrow upperSubtitle="Account Manage" thumb="/assets/profile.png" thumbSize="30px" onClick="" id ="getAddress">
@@ -54,7 +54,7 @@
  <view class ="container-general">
    <list-item arrow upperSubtitle="Support center" thumb="assets/support.png" thumbSize="30px" onClick="" id ="support"></list-item>
 
-   <list-item arrow upperSubtitle="Rating Application" thumb="/assets/star.png" thumbSize="30px" onClick="" id ="rating"></list-item>
+   <list-item arrow upperSubtitle="Rating Application" thumb="/assets/rating.png" thumbSize="30px" onClick="" id ="rating"></list-item>
    
  </view>
 </view>
