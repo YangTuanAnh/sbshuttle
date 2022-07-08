@@ -71,17 +71,25 @@
         <!-- Choose image of Baggage-->
         <view class ="tittle2"><text>Baggage image</text></view>
 
-        <view class ="input6">
-          <view class="">
-            <button class="btnChooseImg" onTap="onChooseImage" type="ghost" style ="background-color: Gainsboro; color: black;" size="small" Solid(small)>Choose Image</button>
+
+        <view class ="input6" style="display: flex;">
+          <uploader>
+            <view class="flex items-center px-2x-small">
+              <icon type="info" class="mr-2x-small"/>
+              <text>Select image</text>
+            </view>
+          </uploader>
+
+          <view class ="container-select2" style="margin-left: 5%;">
+            <uploader>
+              <view class="flex items-center px-2x-small">
+                <icon type="info" class="mr-2x-small"/>
+                <text>Select image</text>
+              </view>
+            </uploader>
           </view>
-          <block tiki:for="{{imgs}}">
-            <image src="{{item}}" />
-          </block>
         </view>
-
       </view>
-
     </form>
   </view>
 
@@ -95,8 +103,8 @@
       <view class ="input7">
         <view class ="optionSheet">
           <view class="list-button" style="display: flex;">
-            <button class ="btnVehicle" type="ghost" size="medium" Solid(medium) data-template="picker1" style="background-color: Gainsboro; color: black;" onTap="onClickFinished1">Vehicle</button>
-            <button class ="btnDeli" type="ghost" size="medium" Solid(medium) data-template="picker2" style="background-color: Gainsboro; color: black;"onTap="onClickFinished2">Delivery</button>
+            <button class ="btnVehicle" type="ghost" size="medium" Solid(medium) data-template="picker1" style="background-color: Gainsboro; color: black;" onTap="onClickFinished1">Choose Vehicle</button>
+            <button class ="btnDeli" type="ghost" size="medium" Solid(medium) data-template="picker2" style="background-color: Gainsboro; color: black;"onTap="onClickFinished2">Choose Shipping</button>
           </view>
         </view>
       </view>

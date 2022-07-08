@@ -20,10 +20,12 @@ Page({
         animation: true,
         mask: true,
         zIndex: 10,
-        disableScroll: true
+        disableScroll: true,
 
+        //Data page home 
+        
 
-    },
+      },
     onReady(){
       my.hideTabBar({
         animation: false
@@ -80,7 +82,7 @@ Page({
           })
   },
     //fucntion tester address
-    /*getAddress(event) {
+    getAddress(event) {
         my.getLocation({
             cacheTimeout: 30,
             success: (res) => {
@@ -91,10 +93,25 @@ Page({
             },
             fail: (e) => {
                 console.log(e);
+
+                my.alert({
+                  title: 'Notification',
+                  content: 'Sorry, we can not see your address',
+                  buttonText: 'Agree',
+                  success: () => {
+                    console.log('Success');
+                  },
+                  fail: () => {
+                    console.log('Fail');
+                  },
+                  complete: () => {
+                    console.log('Complete');
+                  }
+                });
             }
         });
     },
-    */
+    
 
     pageLogin(event) {
       my.createSelectorQuery()
@@ -110,15 +127,32 @@ Page({
         console.log('onChange: ', e);
       },
 
-  // even popup
-  onOk() {
-    this.setData({ show: false });
-  },
-  onCancel() {
-    this.setData({ show: false });
-  },
-  onBookingLoad(e) {
-    this.setData({ ...e.target.dataset.popup });
-  }
+      //loading for submit
 
+       //Yes when see car
+       onConfirm() {
+        my.showLoading({ content: 'Seaching...' });
+
+        setTimeout(() => {
+          my.confirm({
+            title: 'Do you sure Booking',
+            content: 'Booking now', 
+            confirmButtonText: 'Confirm',
+            cancelButtonText: 'Cancel',
+            success: (result) => {
+              my.alert({ title: `${result.confirm}` });
+            },
+            fail: (e) => {
+              my.alert({ title: `${e}` });
+            },
+           
+            complete: () => {
+              console.log('Complete');
+            }
+          });
+
+          my.hideLoading();
+        }, 5000);
+        
+      },
 });

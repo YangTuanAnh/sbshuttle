@@ -11,6 +11,7 @@
         "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
         "stepper": "@tiki.vn/tini-ui/es/stepper/index",
         "block-header" : "components/index",
-        "bottom-sheet": "@tiki.vn/tini-ui/es/bottom-sheet/index"
+        "bottom-sheet": "@tiki.vn/tini-ui/es/bottom-sheet/index",
+        "uploader": "@tiki.vn/tini-ui/es/uploader/index"
     }
 }

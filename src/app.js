@@ -1,9 +1,14 @@
 App({
+  data :{
+
+  },
+
   onLaunch(options) {
     console.log('App onLaunch');
   },
   onShow(options) {
   },
+
 
   onShareAppMessage(options) {
     return {

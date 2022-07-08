@@ -63,16 +63,14 @@ page {
 
 .dropBagge {
   margin-top: 5%;
-  max-width: 65%;
+  max-width: 58%;
   margin-left: 0%
 }
 
 .tittle2 {
   margin-top: 5%;
 }
-.btnChooseImg {
-  border-radius: 5px;
-}
+
 .input6 {
   margin-top: 5%;
 }
@@ -96,15 +94,15 @@ page {
 }
 
 .info-total {
-  margin-top: 40px;
+  margin-top: 10%;
 }
 
 .info-total .text-tatal {
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 .info-total .cost-booking {
-  margin-left: 150px;
+  margin-left: 50%;
   font-weight: bold;
 }
 
