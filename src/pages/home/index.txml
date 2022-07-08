@@ -36,13 +36,13 @@
 
    <carousel-item>
     <view class="radius-pill">
-      <image class="w-full" mode="aspectFill" src="/assets/3968608.jpg" />
+      <image class="w-full" mode="aspectFill" src="/assets/z3550726555318_e542a937a53f0076680b7797da3eae73.jpg" />
     </view>
    </carousel-item>
 
    <carousel-item>
     <view class="radius-pill">
-      <image class="w-full" mode="aspectFill" src="https://img.freepik.com/free-vector/delivery-service-with-masks-concept_23-2148497067.jpg?size=626&ext=jpg&ga=GA1.2.1076335674.1649502331" />
+      <image class="w-full" mode="aspectFill" src="/assets/dbd74258eada298470cb.jpg" />
     </view>
    </carousel-item>
 
@@ -137,7 +137,18 @@
       </text>
     </view>
   </view>
-  <button onTap ="pageLogin" id="send-sub" class="submit">Submit</button>
+  <button onTap ="onBookingLoad" id="send-sub" class="submit"
+    Submit
+    data-popup="{{
+      show:true,
+      position:'bottom',
+      mask:true,
+      title: 'Click on mask to close popup',
+      disableScroll:true
+    }}"
+    >Submit
+    
+  </button>
 
 </view>
 <block tiki:if"{{showTerm}}">
@@ -145,3 +156,45 @@
     <template is="bottom-sheet-term" />
   </bottom-sheet>
 </block>
+
+
+<!-- Booking load-->
+<view>
+  <popup
+     position="{{position}}"
+     show="{{show}}"
+     mask="{{mask}}"
+     disableScroll
+     zIndex="10"
+     onClose="onCancel"
+   >
+   <view style="
+     background:#fff,
+     display:flex;
+     width:{{(position==='right'||position=='left') ?  '250px': '100%' }};
+     height:{{(position==='right'||position=='left') ?  '100%': '200px' }};
+     justify-content:center;
+     flex-direction:column;
+     align-items:center
+   ">
+       <view style="padding:0 16px;text-align:center">{{title}}</view>
+       <view style="
+         display:flex;
+         flex-direction:row;
+         justify-content:space-between;
+         aligh-items:center;
+         margin-top:32px;
+       ">
+         <button
+           onTap="onCancel"
+           size="big"
+           style="
+             width:150px;
+           "
+           type="primary">Close</button>
+       </view>
+     </view>
+   </popup>
+</view>
+ 
+

@@ -10,7 +10,17 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
-        location: undefined
+        //location
+        location: undefined,
+
+
+        //poppup book
+        show: false,
+        position: 'top',
+        animation: true,
+        mask: true,
+        zIndex: 10,
+        disableScroll: true
 
 
     },
@@ -98,5 +108,17 @@ Page({
 
       onChange(e) {
         console.log('onChange: ', e);
-      }
+      },
+
+  // even popup
+  onOk() {
+    this.setData({ show: false });
+  },
+  onCancel() {
+    this.setData({ show: false });
+  },
+  onBookingLoad(e) {
+    this.setData({ ...e.target.dataset.popup });
+  }
+
 });
