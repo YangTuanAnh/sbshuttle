@@ -17,11 +17,11 @@
             </view> 
           -->
 
-            <view class="next-page-detail";  style="margin-top: 5%;">
-              <view class ="container-order" style="border-radius: 12px; background-color: lightgrey; max-width: 85%;">
+            <view class="next-page-detail p-small">
+              <view class ="container-order" style="border-radius: 12px;">
                 <label>
                   <navigator  open-type="navigate" url="pages/odersDetail/index">
-                  <view class ="itemAll" style="font-size: 14px;">
+                  <view class ="itemAll p-small" style="font-size: 14px;">
                     <view id ="item1">Package ID : SBS926485</view>
                     <view id ="item2">Address : 227 Nguyen Van Cu Q10 </view>
                     <view id ="item3">Delivery : SB Shuttle </view>
