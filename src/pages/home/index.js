@@ -70,15 +70,13 @@ Page({
             showTerm: false,
             showPrivacy: true
         })
-        my.showTabBar({
-            animation: true
-        })
+
     },
     onClickPrivacy(e) {
         this.setData({
             showPrivacy: false
         })
-        my.hideTabBar({
+        my.showTabBar({
             animation: true
         })
     },
@@ -217,7 +215,7 @@ Page({
             showOption1: false
         })
         my.showTabBar({
-          animation: true
+            animation: true
         })
     },
     storageSheet(e) {
