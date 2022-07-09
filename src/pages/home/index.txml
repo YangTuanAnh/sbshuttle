@@ -80,7 +80,7 @@
  
    <view class="next_page" style=" display:flex;">
      <button onTap="" size="medium" id="btn_send"  >SEND</button>
-     <button onTap="onTap" size="medium" type="ghost" id="btn_receive">RECEIVE</button>
+     <button onTap="" size="medium" type="ghost" id="btn_receive">RECEIVE</button>
    </view>
  
    <view class="content-routine"><text>Route</text></view>
