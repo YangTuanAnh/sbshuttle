@@ -3,7 +3,7 @@
     <tabs tabs="{{tabs1}}"
       tabsName="activeTab1"
       activeTab="{{activeTab1}}"
-      onTabClick="onTabClick"
+      
       swipeable="{{false}}">
       <block tiki:for="{{tabs1}}">
         <tab-content tabId="{{index}}">
@@ -21,16 +21,17 @@
                 <label>
                   <navigator  open-type="navigate" url="pages/odersDetail/index">
                   <view class ="flex border-solid border-0 border-bottom py-small">
-                    <avatar class="inline" src="/assets/cart.png"/>
-                    <view class="inline word-break mx-large">
+                    <view class="inline word-break m-small">
                       <view id ="item1">Package ID : SBS926485</view>
                       <view id ="item2">Address : 227 Nguyen Van Cu Q10 </view>
                       <view id ="item3">Delivery : SB Shuttle </view>
                       <view id ="item4">Total price : $100.12</view>
                     </view>
-                    <button class="inline radius-pill my-large">
-                      +
-                    </button>
+                    <view class="flex flex-col">
+                      <button class="m-small radius-pill" size="small" onTap="onTabClick">Detail</button>
+                      <button class="m-small radius-pill" size="small" onTap="gotoReceive">Receive</button>
+                    </view>
+                    
                   </view>
                   
                   

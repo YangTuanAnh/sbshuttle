@@ -122,7 +122,7 @@ page {
 }
 
 .info-total .cost-booking {
-    margin-left: 150px;
+    margin-left: 30%;
     font-weight: bold;
 }
 
@@ -131,4 +131,3 @@ page {
     width: 90%;
     margin: 5% auto;
 }
-

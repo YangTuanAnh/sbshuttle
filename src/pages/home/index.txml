@@ -1,4 +1,12 @@
 
+<template name="bottom-sheet-picker2">
+  <picker-view onChange="updateShipping">
+    <picker-view-column>
+      <view>SB NOW (Within 2 hour)</view>
+      <view>SB STANDARD (Within 4 hour)</view>
+    </picker-view-column>
+  </picker-view>
+</template>
 <template name="bottom-sheet-term">
   <view>
     <view class ="px-medium py-2x-small">
@@ -104,6 +112,19 @@
     </view>
   </view>
 
+  <view class ="textDelivery text-large font-bold ml-medium"><text class="content-service">Service Type</text></view>
+  <view class ="deliveryInfo">
+    <form>
+      <view class ="input7">
+        <view class ="optionSheet">
+          <view class="list-button">
+            <button class ="btnDeli ml-medium radius-pill mt-small" type="ghost" size="medium" Solid(medium) data-template="picker2" style="background-color: Gainsboro; color: black;"onTap="onClickFinished2">Choose Shipping</button>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+
 
   <!-- Item info-->
   <view class="info-item">
@@ -115,9 +136,9 @@
           onChange="callBackFn"
           step="{{1}}"
           showNumber
-          value="{{value}}"
+          value="{{baggage_amount}}"
           inputWidth="60px"
-          min="{{2}}" />
+          min="{{1}}" />
       </view>
     </view>
     
@@ -131,7 +152,7 @@
       </text>
       <text class="cost-booking">
         <!-- booking $ -->
-        ${{100.12}}
+        {{curr_charge}} VND
       </text>
     </view>
   </view>
@@ -171,4 +192,6 @@
    </picker-view>
   </bottom-sheet>
  
- 
+  <bottom-sheet show="{{showOption2}}" title="Method" buttonTitle="Finished" distanceFromTop="{{100}}" onClose="onClickClose2" onClick="onClickClose2">
+    <template is="bottom-sheet-picker2" />
+  </bottom-sheet>

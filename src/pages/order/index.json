@@ -8,6 +8,7 @@
         "block-header": "components/block-header/index",
         "avatar": "@tiki.vn/tini-ui/es/avatar/index",
         "tabs": "@tiki.vn/tini-ui/es/tabs/index",
+        "badge": "@tiki.vn/tini-ui/es/badge/index",
         "tab-content": "@tiki.vn/tini-ui/es/tabs/tab-content/index"
     }
 }

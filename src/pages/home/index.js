@@ -11,6 +11,9 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
+        baggage_amount: 10,
+        service_type: "SB NOW",
+        curr_charge: 0,
 
         //poppup book
         show: false,
@@ -22,9 +25,18 @@ Page({
 
         //Data page home 
         storageList: ["SBS Airport", "SBS City Central"],
-        storageValue: "Please select options"
+        storageValue: "Please select options",
 
+        //Service Typ
+        showOption2: false
 
+    },
+    calculatePrice() {
+        _curr_change = (this.data.baggage_amount * 6 + (this.data.selected2 === "12:00 - 1:00" ? 5 : 0) + (this.data.service_type === "SB NOW" ? 2 : 0)) * 23600;
+        this.setData({
+            curr_charge: _curr_change
+        })
+        console.log(this.data.curr_charge)
     },
     onReady() {
         my.hideTabBar({
@@ -40,6 +52,7 @@ Page({
         this.setData({
             selected2
         });
+        this.calculatePrice()
     },
     onClose() {
         this.setData({
@@ -146,6 +159,15 @@ Page({
                         my.navigateTo({
                             url: "pages/payment/index"
                         })
+                        _storage = this.data.storageValue
+                        _pickup_point = this.data.location
+                        _pickup_time = this.data.selected2 + " " + this.data.selected1
+                        _baggage_amount = this.data.baggage_amount
+                        _service_type = this.data.service_type
+                        _curr_charge = this.data.curr_charge
+                        _storage = this.data.storageValue
+                        _making_new_order = true
+                        console.log([_storage, _pickup_point, _pickup_time, _baggage_amount, _service_type])
                     }
                 },
                 fail: (e) => {
@@ -182,6 +204,39 @@ Page({
         this.setData({
             storageValue: this.data.storageList[e.detail.value[0]]
         })
-
+    },
+    onTap(e) {
+        my.navigateTo({
+            url: "pages/receive/index"
+        })
+    },
+    callBackFn(e) {
+        this.setData({
+            baggage_amount: e
+        })
+        console.log(this.data.baggage_amount)
+        this.calculatePrice()
+    },
+    onClickClose2(e) {
+        this.setData({
+            showOption2: false
+        })
+        my.showTabBar({
+            animation: true
+        })
+    },
+    updateShipping(e) {
+        this.setData({
+            service_type: e.detail.value[0] == 0 ? "SB NOW" : "SB STANDARD"
+        })
+        this.calculatePrice()
+    },
+    onClickFinished2(e) {
+        this.setData({
+            showOption2: true
+        })
+        my.showTabBar({
+            animation: false
+        })
     }
 });

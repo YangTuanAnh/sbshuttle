@@ -15,25 +15,25 @@
       Username
     </view>
     <view class ="tfUsername">
-      <textfield class ="text1" id ="tfUsn"></textfield>
+      <textfield class ="text1" id ="tfUsn" onInput="updateName"></textfield>
     </view>
     <view class ="content2">
       Email
     </view>
     <view class ="tfEmailId">
-      <textfield id ="tfPass"></textfield>
+      <textfield id ="tfPass" onInput="updateEmail"></textfield>
     </view>
     <view class ="content3">
       Phone
     </view>
     <view class ="tfPhoneNumber">
-      <textfield id ="tfPhone"></textfield>
+      <textfield id ="tfPhone" onInput="updatePhone"></textfield>
     </view>
     <view class ="content4">
       Address
     </view>
     <view class ="tfAddress">
-      <textfield id ="tfAddr"></textfield>
+      <textfield id ="tfAddr" onInput="updateAddress"></textfield>
     </view>
   </view>
   <!-- Lien he voi shuttle-->
