@@ -7,6 +7,7 @@ Page({
         my.getLocation({
             cacheTimeout: 30,
             success: (res) => {
+              //my.alert({title: JSON.stringify(res)});
                 this.setData({
                     location: res
                 });
