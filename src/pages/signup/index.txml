@@ -3,19 +3,19 @@
   <view class = "sign-textMini"><text>Please enter your detail</text></view>
   <view class="tfName">
     <text>Enter your name</text>
-    <textfield class ="tfN" id ="name" placeholder="vuongtrananhtuan"></textfield>
+    <textfield class ="tfN" id ="name" placeholder="vuongtrananhtuan" onInput="updateName"></textfield>
   </view>
   <view class="tfUsername">
     <view class ="textPhone">
       <text>Enter your phone</text>
     </view>
-    <textfield class ="tfPhone" id ="tfPN" placeholder="+84"></textfield>
+    <textfield class ="tfPhone" id ="tfPN" placeholder="+84" onInput="updatePhone"></textfield>
   </view>
   <view class ="tfPassword">
     <view class="textPass">
       <text>Enter Your Email</text>
     </view>
-    <textfield class ="tfPass"password="*" id ="tfPW" placeholder="At least 8 characters"></textfield>
+    <textfield class ="tfPass"password="*" id ="tfPW" placeholder="At least 8 characters" onInput="upateEmail"></textfield>
   </view>
 
   <view class ="card">

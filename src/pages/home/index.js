@@ -13,8 +13,8 @@ Page({
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
         baggage_amount: 10,
-        service_type: "SB NOW",
         curr_charge: 0,
+        location: "Please select location",
 
         //poppup book
         show: false,
@@ -32,8 +32,11 @@ Page({
         showOption2: false
 
     },
+    onLoad(e) {
+
+    },
     calculatePrice() {
-        _curr_change = (this.data.baggage_amount * 6 + (this.data.selected2 === "12:00 - 1:00" ? 5 : 0) + (this.data.service_type === "SB NOW" ? 2 : 0)) * 23600;
+        _curr_change = (this.data.baggage_amount * 6 + (this.data.selected2 === "12:00 - 1:00" ? 5 : 0)) * 23600;
         this.setData({
             curr_charge: _curr_change
         })
@@ -146,6 +149,10 @@ Page({
 
     onChange(e) {
         console.log('onChange: ', e);
+        this.setData({
+            location: _pickup_point
+        })
+        console.log(this.data.location)
     },
 
     //loading for submit
@@ -166,10 +173,6 @@ Page({
                 confirmButtonText: 'Confirm',
                 cancelButtonText: 'Cancel',
                 success: (result) => {
-
-                    my.alert({
-                        title: `${result.confirm}`
-                    });
                     if (result.confirm == true) {
                         my.navigateTo({
                             url: "pages/signup/index"
@@ -178,11 +181,10 @@ Page({
                         _pickup_point = this.data.location
                         _pickup_time = this.data.selected2 + " " + this.data.selected1
                         _baggage_amount = this.data.baggage_amount
-                        _service_type = this.data.service_type
                         _curr_charge = this.data.curr_charge
                         _storage = this.data.storageValue
                         _making_new_order = true
-                        console.log([_storage, _pickup_point, _pickup_time, _baggage_amount, _service_type])
+                        console.log([_storage, _pickup_point, _pickup_time, _baggage_amount])
                     }
                 },
                 fail: (e) => {
@@ -205,9 +207,9 @@ Page({
             showOption1: true
         })
         my.hideTabBar({
-          animation: false
+            animation: false
         })
-       
+
     },
 
     onClickClose1(e) {

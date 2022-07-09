@@ -25,13 +25,8 @@
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
-    <text class="inline-block">{{service_type==="SB NOW" ? 23600*2 : 0}} VND</text>
-  </view>
-
-  <view>
     <text class="font-bold inline-block mr-small mt-small">Final Charge: </text>
-    <text class="inline-block">{{curr_charge + (service_type==="SB NOW" ? 23600*2 : 0)}} VND</text>
+    <text class="inline-block">{{curr_charge}} VND</text>
   </view>
 
   <view class="bg-gray10 mt-small">
@@ -47,10 +42,6 @@
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Receiving Time: </text>
       <text class="inline-block">{{pickup_time}}</text>
-    </view>
-    <view class="text-small">
-      <text class="font-bold inline-block mr-small mt-small">Type of Service: </text>
-      <text class="inline-block">{{service_type}}</text>
     </view>
   </view>
   </view>

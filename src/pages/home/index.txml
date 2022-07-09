@@ -121,19 +121,6 @@
     </view>
   </view>
 
-  <view class ="textDelivery text-large font-bold ml-medium"><text class="content-service">Service Type</text></view>
-  <view class ="deliveryInfo">
-    <form>
-      <view class ="input7">
-        <view class ="optionSheet">
-          <view class="list-button">
-            <button class ="btnDeli ml-medium radius-pill mt-small" type="ghost" size="medium" Solid(medium) data-template="picker2" style="background-color: Gainsboro; color: black;"onTap="onClickFinished2">Choose Shipping</button>
-          </view>
-        </view>
-      </view>
-    </form>
-  </view>
-
 
   <!-- Item info-->
   <view class="info-item">
@@ -187,7 +174,7 @@
 
 
 
-<view class="block-content" hidden={{!location}}>
+<!--view class="block-content" hidden={{!location}}>
   <view class="title mb-8">Current location:</view>
   <text class="text-full">Latitude:{{location.latitude}}</text>
   <text class="text-full">Longitude:{{location.longitude}}</text>
@@ -196,7 +183,7 @@
   <text class="text-full">Altitude Accuracy:{{location.altitudeAccuracy}}</text>
   <text class="text-full">Heading:{{location.heading}}</text>
   <text class="text-full">Speed:{{location.speed}}</text>
-</view>
+</view-->
   
  
   <!-- Bottom sheet for option-->
@@ -209,6 +196,3 @@
    </picker-view>
   </bottom-sheet>
  
-  <bottom-sheet show="{{showOption2}}" title="Method" buttonTitle="Finished" distanceFromTop="{{100}}" onClose="onClickClose2" onClick="onClickClose2">
-    <template is="bottom-sheet-picker2" />
-  </bottom-sheet>

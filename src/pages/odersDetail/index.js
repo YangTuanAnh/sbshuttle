@@ -6,7 +6,6 @@ Page({
         user_phone: undefined,
         recipient_phone: 0903759375,
         pickup_time: undefined,
-        service_type: undefined,
         total_charge: undefined,
         package_ID: undefined
     },
@@ -18,7 +17,6 @@ Page({
             pickup_point: _pickup_point,
             user_phone: _user_phone,
             pickup_time: _pickup_time,
-            service_type: _service_type,
             total_charge: _total_charge
         })
         if (_making_new_order) {
@@ -35,9 +33,7 @@ Page({
         my.createSelectorQuery()
             .select(event.currentTarget.id)
             .exec((ret) => {
-                my.navigateBack({
-                    delta: 2
-                })
+                my.redirectTo({url:"pages/home/index"})
             })
     }
 });

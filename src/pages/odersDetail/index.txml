@@ -46,10 +46,6 @@
       <text class="inline-block">{{pickup_time}}</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
-      <text class="inline-block">{{service_type}}</text>
-    </view>
-    <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Total Charge: </text>
       <text class="inline-block">{{total_charge}}</text>
     </view>

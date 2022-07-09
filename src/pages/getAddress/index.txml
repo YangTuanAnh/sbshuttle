@@ -1,11 +1,8 @@
 <view class="container-address">
   <view class ="tfAddress" style="margin-left: 5%; max-width: 90%; padding-top: 5%">
     <textfield
-   value={{location}}
    placeholder="Get item at address"
    onInput="onInput"
-   onFocus="onFocus"
-   onBlur="onBlur"
  />
   </view>
 
