@@ -1,12 +1,23 @@
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 
 Page({
   data: {
+<<<<<<< Updated upstream
     location: undefined
   },
    //fucntion tester address
    onGetLocation(event) {
+=======
+    location: undefined,
+
+  },
+
+  onGetLocation(event) {
+>>>>>>> Stashed changes
     my.getLocation({
         cacheTimeout: 30,
         success: (res) => {

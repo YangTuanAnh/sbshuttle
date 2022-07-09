@@ -10,6 +10,11 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
+<<<<<<< Updated upstream
+=======
+       
+
+>>>>>>> Stashed changes
 
         //poppup book
         show: false,
@@ -71,6 +76,7 @@ Page({
     }, */
 
     toPageAddress(event) {
+<<<<<<< Updated upstream
         my.createSelectorQuery()
             .select(event.currentTarget.id)
             .exec((ret) => {
@@ -110,6 +116,27 @@ Page({
         });
     },
 
+=======
+      my.createSelectorQuery()
+          .select(event.currentTarget.id)
+          .exec((ret) => {
+              my.navigateTo({
+                  url: "pages/getAddress/index"
+              })
+          })
+  },
+   
+  
+    pageLogin(event) {
+      my.createSelectorQuery()
+          .select(event.currentTarget.id)
+          .exec((ret) => {
+              my.navigateTo({
+                  url: "pages/receive/index"
+              })
+          })
+      },
+>>>>>>> Stashed changes
 
       onChange(e) {
         console.log('onChange: ', e);

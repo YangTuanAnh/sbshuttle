@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
     "pages": [
         "pages/home/index",
         "pages/odersDetail/index",
@@ -45,3 +46,52 @@
         ]
     }
 }
+=======
+  "pages": [
+    "pages/home/index",
+    "pages/odersDetail/index",
+    "pages/user/index",
+    "pages/receive/index",
+    "pages/login/index",
+    "pages/signup/index",
+    "pages/getAddress/index",
+    "pages/order/index",
+    "pages/chatbox/index",
+    "pages/payment/index"
+  ],
+  "window": {
+    "defaultTitle": "SB Shuttle",
+    "titleBarColor": "#DC143C",
+    "backgroundColor": "#F5F7FC",
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "items": [
+      {
+        "name": "Booking Page",
+        "pagePath": "pages/home/index",
+        "icon": "assets/2460877.png",
+        "activeIcon": "assets/2460877.png"
+      },
+      {
+        "name": "Order",
+        "pagePath": "pages/order/index",
+        "icon": "assets/icons8-order-history-58.png",
+        "activeIcon": "assets/icons8-order-history-58.png"
+      },
+      {
+        "name": "Chat",
+        "pagePath": "pages/chatbox/index",
+        "icon": "assets/9004858_chat_message_communication_bubble_icon.png",
+        "activeIcon": "assets/9004858_chat_message_communication_bubble_icon.png"
+      },
+      {
+        "name": "Profile",
+        "pagePath": "pages/user/index",
+        "icon": "assets/668709.png",
+        "activeIcon": "assets/668709.png"
+      }
+    ]
+  }
+}
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <view class="container-address">
   <view class ="tfAddress" style="margin-left: 5%; max-width: 90%; margin-top: 5%;">
     <textfield
@@ -12,5 +13,41 @@
   <view class ="btn-getAddress display: flex" style="margin-left: 4%;">
     <view class ="iconContent" style="margin-top: 2%;"><icon type="location"></icon></view>
     <view class="contentBtn"><button onTap="onGetLocation" style="background-color: white; color: black;" id ="btnAddress" type="ghost">Get your address now ?</button></view>
+=======
+<view class="container-seach">
+  <view style="margin-left: 5%; margin-top: 5%; max-width: 90%;">
+    <textfield
+    placeholder="Get item at address"
+    value= {{location}}
+    onInput="onInput"
+    onFocus="onFocus"
+    onBlur="onBlur">
+    </textfield>
   </view>
+
+<view class ="btn-getAddress" style="display: flex;">
+  <view style="margin-top: 2%;"><icon type="location"></icon></view>
+  <button onTap ="onGetLocation" type="ghost" style="background-color: white; color: black;">
+    Get your address now ? 
+  </button>
 </view>
+</view>
+
+<template name ="info-location">
+  <view>
+    <view class="block-content">
+      <button class="button-full" onTap="onGetLocation">Get User Location</button>
+    </view>
+    <view class="block-content" hidden={{!location}}>
+      <view class="title mb-8">Current location:</view>
+      <text class="text-full">Latitude:{{location.latitude}}</text>
+      <text class="text-full">Longitude:{{location.longitude}}</text>
+      <text class="text-full">Altitude:{{location.altitude}}</text>
+      <text class="text-full">Accuracy:{{location.accuracy}}</text>
+      <text class="text-full">Altitude Accuracy:{{location.altitudeAccuracy}}</text>
+      <text class="text-full">Heading:{{location.heading}}</text>
+      <text class="text-full">Speed:{{location.speed}}</text>
+    </view>
+>>>>>>> Stashed changes
+  </view>
+</template>

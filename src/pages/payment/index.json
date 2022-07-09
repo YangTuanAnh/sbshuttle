@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
     "defaultTitle": "Payment",
     "titleColor": "white",
@@ -9,3 +10,6 @@
         "stepper": "@tiki.vn/tini-ui/es/stepper/index"
     }
 }
+=======
+{}
+>>>>>>> Stashed changes
