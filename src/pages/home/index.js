@@ -62,8 +62,10 @@ Page({
     onLeftClick(event) {
         console.log('onLeftClick Image/Icon', event);
     },
-    /*
-    onTap(event) {
+    
+
+
+    toPageReceive(event) {
         my.createSelectorQuery()
             .select(event.currentTarget.id)
             .exec((ret) => {
@@ -71,7 +73,7 @@ Page({
                     url: "pages/receive/index"
                 })
             })
-    }, */
+    },
 
     toPageAddress(event) {
         my.createSelectorQuery()

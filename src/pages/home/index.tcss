@@ -110,24 +110,11 @@
 }
 
 
-.container-a {
-    margin-top: 4%;
-    max-width: 40%;
-    margin-left: 5%;
-}
-
-.container-b {
-    max-width: 40%;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
 .item-a {
-    margin-top: 2%;
     font-size: 12px;
-    width: 34%;
-    height: 30px;
-    border-radius: 20px;
+    width: 45%;
+  
+    border-radius: 8px;
 }
 
 .item-b {
@@ -138,7 +125,7 @@
 }
 
 .info-total {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .info-total .text-tatal {

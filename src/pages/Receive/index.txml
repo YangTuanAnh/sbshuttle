@@ -48,62 +48,43 @@
       </view>
       <view class ="inputArea">
         <view>Note</view>
-        <textarea class ="tfNote" placeholder="Title"></textarea>
+        <textarea class ="tfNote" placeholder="Title" maxlength="200" auto-height="true"></textarea>
       </view>
     </form>
   </view>
   <view></view>
 
- 
-  <view class ="content-baggage">
-    <text class="textInfo2">The baggage</text>
-  </view>
-
-  <view class ="formInfoBaggage">
-    <form>
-      <view class ="input5">
-        <view class ="title1">Heavy baggage</view>
-        <dropdown class="dropBagge" bottomSheetTitle=" How many weight" shape="rounded" maskClose="{{false}}"
-          bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="23kg under"/>
-      </view>
-
-      <view class ="input4Img">
-        <!-- Choose image of Baggage-->
-        <view class ="tittle2"><text>Baggage image</text></view>
+  <view class ="input4Img">
+    <!-- Choose image of Baggage-->
+    <view class ="tittle2" style="margin-left: 5%;"><text>Baggage image</text></view>
 
 
-        <view class ="input6" style="display: flex;">
-          <uploader>
-            <view class="flex items-center px-2x-small">
-              <icon type="info" class="mr-2x-small"/>
-              <text>Select image</text>
-            </view>
-          </uploader>
-
-          <view class ="container-select2" style="margin-left: 5%;">
-            <uploader>
-              <view class="flex items-center px-2x-small">
-                <icon type="info" class="mr-2x-small"/>
-                <text>Select image</text>
-              </view>
-            </uploader>
-          </view>
+    <view class ="input6" style="display: flex;">
+      <uploader>
+        <view class="flex items-center px-2x-small">
+          <icon type="info" class="mr-2x-small"/>
+          <text>Select image</text>
         </view>
+      </uploader>
+
+      <view class ="container-select2" style="margin-left: 5%;">
+        <uploader>
+          <view class="flex items-center px-2x-small">
+            <icon type="info" class="mr-2x-small"/>
+            <text>Select image</text>
+          </view>
+        </uploader>
       </view>
-    </form>
+    </view>
   </view>
 
-  <view></view>
 
-  <!--Choose Delivery vehicle-->
   <view class ="textDelivery"><text class="content-service">Service Type</text></view>
-  
   <view class ="deliveryInfo">
     <form>
       <view class ="input7">
         <view class ="optionSheet">
-          <view class="list-button" style="display: flex;">
-            <button class ="btnVehicle" type="ghost" size="medium" Solid(medium) data-template="picker1" style="background-color: Gainsboro; color: black;" onTap="onClickFinished1">Choose Vehicle</button>
+          <view class="list-button">
             <button class ="btnDeli" type="ghost" size="medium" Solid(medium) data-template="picker2" style="background-color: Gainsboro; color: black;"onTap="onClickFinished2">Choose Shipping</button>
           </view>
         </view>
@@ -111,6 +92,20 @@
     </form>
   </view>
   
+
+ 
+  <view class ="content-baggage">
+    <text class="textInfo2">Wanna grab some food or water ?</text>
+  </view>
+
+  
+  <view class ="formInfoBaggage">
+        <view class="block-content">
+          <button style ="border-radius: 12px; back" class="button-full" type="" onTap="onOpenNativeStore">Shop at Tiki</button>
+        </view>
+  </view>
+  <view></view>
+
   <!-- Total bill-->
   <view class="info-total">
     <view class="row-total">
@@ -123,9 +118,9 @@
       </text>
     </view>
   </view>
+
   <button onTap ="pageLogin" id="send-sub-login" class="submit" >Payment</button>
 
-  
 </view>
 
   <!-- Bottom sheet for option-->

@@ -60,7 +60,7 @@
   </view>
   </view>
   
-  <text class="font-bold text-large block">Payment Method:</text>
+  <text class="font-bold text-large block">Pay by</text>
   <view class ="container-acount my-small">
     <list-item arrow upperSubtitle="Pay with Momo" thumb="/assets/purchase-order.png" thumbSize="30px" onClick="toPageOrder" id ="order">
     </list-item>

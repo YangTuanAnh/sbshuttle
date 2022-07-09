@@ -66,6 +66,7 @@ page {
 
 .formInfoBaggage {
     margin-left: 5%;
+    margin-top: 5%;
 }
 
 .input5 {
@@ -87,7 +88,8 @@ page {
 }
 
 .input6 {
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
 .textDelivery {
@@ -99,7 +101,7 @@ page {
 
 .optionSheet {
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 0%;
 }
 
 .btnVehicle {
@@ -129,3 +131,4 @@ page {
     width: 90%;
     margin: 5% auto;
 }
+
