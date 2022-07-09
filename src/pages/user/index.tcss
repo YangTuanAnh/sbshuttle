@@ -64,7 +64,7 @@
   margin-left: 5%;
 }
 .container-acount {
-  margin-left: 5%;
+  margin-left: 4%;
 }
 .content-general {
   margin-top: 5%;
@@ -73,5 +73,5 @@
   margin-left: 5%;
 }
 .container-general {
-  margin-left: 5%;
+  margin-left: 4%;
 }

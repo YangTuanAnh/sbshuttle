@@ -4,6 +4,7 @@
   "components": true,
 
     "usingComponents": {
-      "address": "@tiki.vn/tini-ui/es/address/index"
+      "address": "@tiki.vn/tini-ui/es/address/index",
+      "textfield": "@tiki.vn/tini-ui/es/textfield/index"
     }
 }

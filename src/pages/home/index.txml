@@ -67,7 +67,7 @@
     <list-item padding="true" arrow upperSubtitle="{{location}}" onClick="" id ="Getaddress">
       <view>Address</view>
       <view slot="suffix">
-        <button class="text-title text-regular" type="solid" style="border-radius: 15px;" onTap="getAddress">Get address now</button>
+        <button class="text-title text-regular" type="solid" style="border-radius: 15px;" onTap="toPageAddress">Get address now</button>
       </view>
       <view slot="prefix">
         <icon type="location" size="24" color="red" />

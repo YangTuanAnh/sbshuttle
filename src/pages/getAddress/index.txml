@@ -1,26 +1,16 @@
-<view class="container">
-  <view class="block">
-    <map
-      class="map"
-      onTap="onTap"
-      onMarkerTap="onMarkerTap"
-      latitude="{{latitude}}"
-      longitude="{{longitude}}"
-      zoom="{{zoom}}"
-      markers="{{markers}}"
-      polyline="{{polyline}}"
-      polygon="{{polygon}}"
-      circles="{{circles}}"
-      apiKey="{{apiKey}}" />
+<view class="container-address">
+  <view class ="tfAddress" style="margin-left: 5%; max-width: 90%; margin-top: 5%;">
+    <textfield
+   value={{location}}
+   placeholder="Get item at address"
+   onInput="onInput"
+   onFocus="onFocus"
+   onBlur="onBlur"
+ />
   </view>
 
-  <view class="block">
-    <view class="actions">
-      <button onTap="resetMap">Reset Map</button>
-      <button onTap="showMarker">Marker</button>
-      <button onTap="showPolygon">Polygon</button>
-      <button onTap="showPolyline">Polyline</button>
-      <button onTap="showCircle">Circle</button>
-    </view>
+  <view class ="btn-getAddress display: flex" style="margin-left: 4%;">
+    <view class ="iconContent" style="margin-top: 2%;"><icon type="location"></icon></view>
+    <view class="contentBtn"><button onTap="onGetLocation" style="background-color: white; color: black;" id ="btnAddress" type="ghost">Get your address now ?</button></view>
   </view>
 </view>

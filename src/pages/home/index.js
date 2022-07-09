@@ -10,9 +10,6 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
-        //location
-        location: undefined,
-
 
         //poppup book
         show: false,
@@ -62,6 +59,7 @@ Page({
     onLeftClick(event) {
         console.log('onLeftClick Image/Icon', event);
     },
+    /*
     onTap(event) {
         my.createSelectorQuery()
             .select(event.currentTarget.id)
@@ -70,7 +68,7 @@ Page({
                     url: "pages/receive/index"
                 })
             })
-    },
+    }, */
 
     toPageAddress(event) {
       my.createSelectorQuery()
@@ -113,16 +111,6 @@ Page({
     },
     
 
-    pageLogin(event) {
-      my.createSelectorQuery()
-          .select(event.currentTarget.id)
-          .exec((ret) => {
-              my.navigateTo({
-                  url: "pages/receive/index"
-              })
-          })
-      },
-
       onChange(e) {
         console.log('onChange: ', e);
       },
@@ -131,6 +119,9 @@ Page({
 
        //Yes when see car
        onConfirm() {
+
+          
+
         my.showLoading({ content: 'Seaching...' });
 
         setTimeout(() => {
@@ -140,12 +131,17 @@ Page({
             confirmButtonText: 'Confirm',
             cancelButtonText: 'Cancel',
             success: (result) => {
+
               my.alert({ title: `${result.confirm}` });
+              if(confirmButtonText == true){
+                my.navigateTo({
+                  url: "pages/login/index"
+                })
+              }
             },
             fail: (e) => {
               my.alert({ title: `${e}` });
             },
-           
             complete: () => {
               console.log('Complete');
             }

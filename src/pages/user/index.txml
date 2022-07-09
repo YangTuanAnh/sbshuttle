@@ -40,7 +40,7 @@
   <view class ="content-ac">Account</view>
 
   <view class ="container-acount">
-    <list-item arrow upperSubtitle="Order" thumb="/assets/purchase-order.png" thumbSize="30px" onClick="" id ="order">
+    <list-item arrow upperSubtitle="Order" thumb="/assets/purchase-order.png" thumbSize="30px" onClick="toPageOrder" id ="order">
     </list-item>
   
     <list-item arrow upperSubtitle="Payment methob" thumb="/assets/mobile-payment.png" thumbSize="30px" onClick="" id ="getAddress">
