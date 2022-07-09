@@ -180,7 +180,7 @@
 
 
 <block tiki:if"{{showPrivacy}}">
-  <bottom-sheet show="{{showPrivacy}}" title="We value your privacy" buttonTitle="Understand" distanceFromTop="{{100}}" onClose="onClosePrivacy" onClick="onClickPrivacy">
+  <bottom-sheet show="{{showPrivacy}}" title="We value your privacy"  distanceFromTop="{{100}}" onClose="onClosePrivacy" onClick="onClickPrivacy">
     <template is="bottom-privacy" />
   </bottom-sheet>
 </block>

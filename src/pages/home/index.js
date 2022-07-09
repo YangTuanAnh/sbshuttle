@@ -206,9 +206,10 @@ Page({
         this.setData({
             showOption1: true
         })
-        my.showTabBar({
-            animation: false
+        my.hideTabBar({
+          animation: false
         })
+       
     },
 
     onClickClose1(e) {
