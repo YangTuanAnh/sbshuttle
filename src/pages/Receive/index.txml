@@ -8,7 +8,7 @@
 </template>
 
 <template name="bottom-sheet-picker2">
-  <picker-view>
+  <picker-view onChange="updateShipping">
     <picker-view-column>
       <view>SB NOW (Within 2 hour)</view>
       <view>SB STANDARD (Within 4 hour)</view>
@@ -36,19 +36,19 @@
     <form>
       <view class ="input1">
         <view>Recipient's name</view>
-        <textfield class ="tfname"name ="name" placeholder="Mr Tuan"></textfield>
+        <textfield class ="tfname"name ="name" placeholder="Mr Tuan" onInput="updateName"></textfield>
       </view>
       <view class ="input2">
         <view>Phone number to contact</view>
-        <textfield  class ="tfPhone" name ="phone" placeholder="+84"></textfield>
+        <textfield  class ="tfPhone" name ="phone" placeholder="+84" onInput="updatePhone"></textfield>
       </view>
       <view class ="input3">
         <view>Delivery address</view>
-        <textfield class ='tfAddress' name ="address" placeholder="Street / Distric / City"></textfield>
+        <textfield class ='tfAddress' name ="address" placeholder="Street / Distric / City" onInput="updateAddress"></textfield>
       </view>
       <view class ="inputArea">
         <view>Note</view>
-        <textarea class ="tfNote" placeholder="Title" maxlength="200" auto-height="true"></textarea>
+        <textarea class ="tfNote" placeholder="Title" maxlength="200" auto-height="true" onInput="updateNote"></textarea>
       </view>
     </form>
   </view>
@@ -114,7 +114,7 @@
       </text>
       <text class="cost-booking">
         <!-- booking $ -->
-        ${{100.12}}
+        {{curr_charge}} VND
       </text>
     </view>
   </view>
@@ -128,7 +128,7 @@
     <template is="bottom-sheet-picker1" />
   </bottom-sheet>
 
-  <bottom-sheet show="{{showOption2}}" title="Methob" buttonTitle="Finished" distanceFromTop="{{100}}" onClose="onClickClose2" onClick="onClickClose2">
+  <bottom-sheet show="{{showOption2}}" title="Method" buttonTitle="Finished" distanceFromTop="{{100}}" onClose="onClickClose2" onClick="onClickClose2">
     <template is="bottom-sheet-picker2" />
   </bottom-sheet>
 

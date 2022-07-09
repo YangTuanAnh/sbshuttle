@@ -1,6 +1,6 @@
 <view class="container p-large">
-  <text class="font-bold text-large">Your package ID:</text>
-  <textfield disabled="true" class="my-small" value="SBS437829"/>
+  <text class="font-bold text-large">Your package ID: {{package_ID}}</text>
+  <!--textfield disabled="true" class="my-small" value="SBB437829"/-->
 
   <text class="block my-small">Order Status: {{"Storing at SB Shuttle"}}</text>
   <view class="bg-white p-large radius-pill">
@@ -8,27 +8,27 @@
   
   <view>
     <text class="font-bold inline-block mr-small mt-small">Name:</text>
-    <text class="inline-block">Yang Tuấn Anh</text>
+    <text class="inline-block">{{user_name}}</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Pick-up point: </text>
-    <text class="inline-block">Pillar 9-Arrival Hall-Tan Son Nhat Airport </text>
+    <text class="inline-block">{{pickup_point}}</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Delivery Point: </text>
-    <text class="inline-block">227 Le Hong Phong St., HCMC</text>
+    <text class="inline-block">{{user_address}}</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Sender Mobile: </text>
-    <text class="inline-block">0888644311</text>
+    <text class="inline-block">{{user_phone}}</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Receiver Mobile: </text>
-    <text class="inline-block">0888644311</text>
+    <text class="inline-block">{{recipient_phone}}</text>
   </view>
 
   <view class="bg-gray30 radius-pill mt-small p-small">
@@ -43,15 +43,19 @@
     </view>
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Reveiving Time: </text>
-      <text class="inline-block">1:00-2:00 PM</text>
+      <text class="inline-block">{{pickup_time}}</text>
     </view>
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
-      <text class="inline-block">SB NOW (2H)</text>
+      <text class="inline-block">{{service_type}}</text>
     </view>
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Total Charge: </text>
-      <text class="inline-block">150.000 USD</text>
+      <text class="inline-block">{{total_charge}}</text>
+    </view>
+    <view class="text-small">
+      <text class="font-bold inline-block mr-small mt-small">Package IDs: </text>
+      <text class="inline-block">SBB437829</text>
     </view>
   </view>
   </view>

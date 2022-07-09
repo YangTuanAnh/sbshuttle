@@ -17,7 +17,7 @@
         "backgroundColor": "#F5F7FC",
         "allowsBounceVertical": "NO"
     },
-    
+
     "tabBar": {
         "items": [{
                 "name": "Booking Page",

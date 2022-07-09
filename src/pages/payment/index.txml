@@ -1,42 +1,37 @@
 <view class="container p-large">
-  <text class="font-bold text-large">Your Order ID: {{"SBS437829"}}</text>
+  <text class="font-bold text-large">Your Order ID: {{package_ID}}</text>
 
   <view class="bg-white p-large radius-pill my-small">
   <text class="font-bold text-large block">Total Charge:</text>
   
   <view>
     <text class="font-bold inline-block mr-small mt-small">Charge:</text>
-    <text class="inline-block">{{"150,000"}} USD</text>
+    <text class="inline-block">{{curr_charge}} VND</text>
   </view>
 
   <view>
     <view class="flex">
-      <radio class="inline mt-small" checked="True" />
-      <text class="font-bold inline m-small" style="width: 50%">Discount Code:</text>
-      <textfield></textfield>
+      <radio class="inline mt-small" />
+      <text class="font-bold inline m-small" style="width: 110%">Discount Code:</text>
+      <textfield disabled="False"></textfield>
     
     </view>
-      <text class="block">Total Discount: {{"20,000"}} USD</text>
+      <text class="block">Total Discount: 0 VND</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">After Discount :</text>
-    <text class="inline-block">{{"150,000"}} - {{"20,000"}} = {{"150,000-20,000"}} USD</text>
-  </view>
-
-  <view>
-    <text class="font-bold inline-block mr-small mt-small">Storage Charge: </text>
-    <text class="inline-block">{{0}} USD</text>
+    <text class="inline-block">{{curr_charge}} VND</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
-    <text class="inline-block">{{20000}} USD</text>
+    <text class="inline-block">{{service_type==="SB NOW" ? 23600*2 : 0}} VND</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Final Charge: </text>
-    <text class="inline-block">{{57000}} USD</text>
+    <text class="inline-block">{{curr_charge + (service_type==="SB NOW" ? 23600*2 : 0)}} VND</text>
   </view>
 
   <view class="bg-gray10 mt-small">
@@ -51,11 +46,11 @@
     </view>
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Receiving Time: </text>
-      <text class="inline-block">1:00-2:00 PM</text>
+      <text class="inline-block">{{pickup_time}}</text>
     </view>
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Type of Service: </text>
-      <text class="inline-block">SB NOW (2H)</text>
+      <text class="inline-block">{{service_type}}</text>
     </view>
   </view>
   </view>
@@ -71,6 +66,6 @@
     <list-item arrow upperSubtitle="Pay with cash" thumb="/assets/profile.png" thumbSize="30px" onClick="" id ="getAddress">
     </list-item>
   </view>
-  <text class="font-bold text-large">Total Price: {{"130,000"}} USD</text>
+  <text class="font-bold text-large">Total Price: {{curr_charge + (service_type==="SB NOW" ? 23600*2 : 0)}} VND</text>
   <button class="w-full radius-pill my-small" onTap="gotoConfirm">Confirm Payment</button>
 </view>
