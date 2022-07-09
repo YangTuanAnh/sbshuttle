@@ -39,7 +39,7 @@
     <text class="inline-block">{{57000}} VND</text>
   </view>
 
-  <view class="bg-gray10 mt-small p-small">
+  <view class="bg-gray10 mt-small">
     <text class="font-bold text-medium block">Details of Order:</text>
     <view class="text-small">
       <text class="font-bold inline-block mr-small mt-small">Baggage Type: </text>
@@ -72,5 +72,5 @@
     </list-item>
   </view>
   <text class="font-bold text-large">Total Price: {{"130,000"}} VND</text>
-  <button class="w-full radius-pill my-small">Confirm Payment</button>
+  <button class="w-full radius-pill my-small" onTap="gotoConfirm">Confirm Payment</button>
 </view>

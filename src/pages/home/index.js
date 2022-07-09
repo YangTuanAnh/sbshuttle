@@ -21,8 +21,8 @@ Page({
         disableScroll: true,
 
         //Data page home 
-        storage1: 'SBS Airport',
-        storage2: 'SBS City Central'
+        storageList: ["SBS Airport", "SBS City Central"],
+        storageValue: "Please select options"
 
 
     },
@@ -177,5 +177,12 @@ Page({
             showOption1: false
         })
     },
+    storageSheet(e) {
+        console.log(e.detail.value[0])
+        this.setData({
+            storageValue: this.data.storageList[e.detail.value[0]],
+            showOption1: false
+        })
 
+    }
 });
