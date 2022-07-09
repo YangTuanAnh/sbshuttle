@@ -1,0 +1,65 @@
+<view class="container p-large">
+  <text class="font-bold text-large">Your package ID: {{"SBS437829"}}</text>
+
+  <view class="bg-white p-large radius-pill my-small">
+  <text class="font-bold text-large block mb-small">Tổng tiền đơn hàng:</text>
+  
+  <view>
+    <text class="font-bold inline-block mr-small">Tiền hàng:</text>
+    <text class="inline-block">{{50000}} VND</text>
+  </view>
+
+  <view>
+    <view class="flex">
+      <radio class="inline" checked="True" />
+      <text class="font-bold inline m-small" style="width: 50%">Mã giảm giá:</text>
+      <textfield></textfield>
+    
+    </view>
+      <text class="block">Mức phí giảm: {{13000}} VND</text>
+  </view>
+
+  <view>
+    <text class="font-bold inline-block mr-small">Tổng tiền sau khi giảm giá:</text>
+    <text class="inline-block">{{50000}} - {{13000}} = {{50000-13000}} VND</text>
+  </view>
+
+  <view>
+    <text class="font-bold inline-block mr-small">Địa chỉ tới: </text>
+    <text class="inline-block">227 Nguyễn Văn Cừ, P.4, Q.5, TPHCM</text>
+  </view>
+
+  <view>
+    <text class="font-bold inline-block mr-small">Số điện thoại người gửi: </text>
+    <text class="inline-block">0888644311</text>
+  </view>
+
+  <view>
+    <text class="font-bold inline-block mr-small">Số điện thoại người nhận: </text>
+    <text class="inline-block">0888644311</text>
+  </view>
+
+  <view class="bg-gray30 radius-pill mt-small p-small">
+    <text class="font-bold text-medium block mb-small">Mặt hàng:</text>
+    <view class="text-small">
+      <text class="font-bold inline-block mr-small">Tên mặt hàng: </text>
+      <text class="inline-block">Hành lý abcxyz</text>
+    </view>
+    <view class="text-small">
+      <text class="font-bold inline-block mr-small">Cân nặng: </text>
+      <text class="inline-block">2 - 5kg</text>
+    </view>
+    <view class="text-small">
+      <text class="font-bold inline-block mr-small">Thời gian nhận: </text>
+      <text class="inline-block">1:00-2:00 PM</text>
+    </view>
+    <view class="text-small">
+      <text class="font-bold inline-block mr-small">Loại dịch vụ: </text>
+      <text class="inline-block">SB NOW (2h)</text>
+    </view>
+  </view>
+  </view>
+  <text class="font-bold text-large mb-small">Total price: {{"50.000"}} VND</text>
+  <button class="w-full radius-pill">Confirm Payment</button>
+</view>
+

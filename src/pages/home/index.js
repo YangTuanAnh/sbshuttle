@@ -1,6 +1,6 @@
 Page({
     data: {
-      showTerm : true,
+        showTerm: true,
         selected1: "AM",
         items1: ["AM", "PM"],
 
@@ -23,13 +23,13 @@ Page({
         disableScroll: true,
 
         //Data page home 
-        
 
-      },
-    onReady(){
-      my.hideTabBar({
-        animation: false
-      })
+
+    },
+    onReady() {
+        my.hideTabBar({
+            animation: false
+        })
     },
     onSelect1(selected1) {
         this.setData({
@@ -42,19 +42,19 @@ Page({
         });
     },
     onClose() {
-      this.setData({
-        showTerm: false,
-      });
+        this.setData({
+            showTerm: false,
+        });
     },
     onClickContinue(e) {
-     this.setData ({
-       showTerm : false
-     })
-     my.showTabBar ({
-       animation : true
-     })
+        this.setData({
+            showTerm: false
+        })
+        my.showTabBar({
+            animation: true
+        })
     },
-   
+
 
     onRightClick(event) {
         console.log('onRightClick Image/Icon', event);
@@ -73,14 +73,14 @@ Page({
     },
 
     toPageAddress(event) {
-      my.createSelectorQuery()
-          .select(event.currentTarget.id)
-          .exec((ret) => {
-              my.navigateTo({
-                  url: "pages/getAddress/index"
-              })
-          })
-  },
+        my.createSelectorQuery()
+            .select(event.currentTarget.id)
+            .exec((ret) => {
+                my.navigateTo({
+                    url: "pages/getAddress/index"
+                })
+            })
+    },
     //fucntion tester address
     getAddress(event) {
         my.getLocation({
@@ -95,64 +95,71 @@ Page({
                 console.log(e);
 
                 my.alert({
-                  title: 'Notification',
-                  content: 'Sorry, we can not see your address',
-                  buttonText: 'Agree',
-                  success: () => {
-                    console.log('Success');
-                  },
-                  fail: () => {
-                    console.log('Fail');
-                  },
-                  complete: () => {
-                    console.log('Complete');
-                  }
+                    title: 'Notification',
+                    content: 'Sorry, we can not see your address',
+                    buttonText: 'Agree',
+                    success: () => {
+                        console.log('Success');
+                    },
+                    fail: () => {
+                        console.log('Fail');
+                    },
+                    complete: () => {
+                        console.log('Complete');
+                    }
                 });
             }
         });
     },
-    
+
 
     pageLogin(event) {
-      my.createSelectorQuery()
-          .select(event.currentTarget.id)
-          .exec((ret) => {
-              my.navigateTo({
-                  url: "pages/receive/index"
-              })
-          })
-      },
+        my.createSelectorQuery()
+            .select(event.currentTarget.id)
+            .exec((ret) => {
+                my.navigateTo({
+                    url: "pages/receive/index"
+                })
+            })
+    },
 
-      onChange(e) {
+    onChange(e) {
         console.log('onChange: ', e);
-      },
+    },
 
-      //loading for submit
+    //loading for submit
 
-       //Yes when see car
-       onConfirm() {
-        my.showLoading({ content: 'Seaching...' });
+    //Yes when see car
+    onConfirm() {
+        my.showLoading({
+            content: 'Seaching...'
+        });
 
         setTimeout(() => {
-          my.confirm({
-            title: 'Do you sure Booking',
-            content: 'Booking now', 
-            confirmButtonText: 'Confirm',
-            cancelButtonText: 'Cancel',
-            success: (result) => {
-              my.alert({ title: `${result.confirm}` });
-            },
-            fail: (e) => {
-              my.alert({ title: `${e}` });
-            },
-           
-            complete: () => {
-              console.log('Complete');
-            }
-          });
+            my.confirm({
+                title: 'Do you sure Booking',
+                content: 'Booking now',
+                confirmButtonText: 'Confirm',
+                cancelButtonText: 'Cancel',
+                success: (result) => {
+                    my.alert({
+                        title: `${result.confirm}`
+                    });
+                },
+                fail: (e) => {
+                    my.alert({
+                        title: `${e}`
+                    });
+                },
 
-          my.hideLoading();
+                complete: () => {
+                    console.log('Complete');
+                    my.redirectTo({url: "pages/payment/index"})
+                }
+            });
+
+            my.hideLoading();
         }, 5000);
-        
-      },
+
+    },
 });
