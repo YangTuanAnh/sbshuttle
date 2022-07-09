@@ -13,8 +13,4 @@
     <view class ="iconContent" style="margin-top: 2%;"><icon type="location"></icon></view>
     <view class="contentBtn"><button onTap="onGetLocation" style="background-color: white; color: black;" id ="btnAddress" type="ghost">Get your address now ?</button></view>
   </view>
-<<<<<<< Updated upstream
 </view>
-=======
-</view>
->>>>>>> Stashed changes

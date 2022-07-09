@@ -3,12 +3,7 @@
     "components": true,
 
     "usingComponents": {
-<<<<<<< Updated upstream
         "address": "@tiki.vn/tini-ui/es/address/index",
         "textfield": "@tiki.vn/tini-ui/es/textfield/index"
-=======
-      "address": "@tiki.vn/tini-ui/es/address/index",
-      "textfield": "@tiki.vn/tini-ui/es/textfield/index"
->>>>>>> Stashed changes
     }
 }
