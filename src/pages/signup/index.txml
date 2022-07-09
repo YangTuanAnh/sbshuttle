@@ -1,8 +1,8 @@
 <view class="container">
-  <view class = "sign-text"><text>Sign Up</text></view>
+  <view class = "sign-text"><text>About Information</text></view>
   <view class = "sign-textMini"><text>Please enter your detail</text></view>
   <view class="tfName">
-    <text>Enter your name account</text>
+    <text>Enter your name</text>
     <textfield class ="tfN" id ="name" placeholder="vuongtrananhtuan"></textfield>
   </view>
   <view class="tfUsername">
@@ -13,19 +13,27 @@
   </view>
   <view class ="tfPassword">
     <view class="textPass">
-      <text>Enter your password</text>
+      <text>Enter Your Email</text>
     </view>
     <textfield class ="tfPass"password="*" id ="tfPW" placeholder="At least 8 characters"></textfield>
+  </view>
+
+  <view class ="card">
+    <view class="textCart">
+      <text>Card Number</text>
+    </view>
+    <view class ="container-card" style="margin-top: 2%; width: 95%;"><textfield class ="tfCard" id ="tfPW" placeholder=""></textfield></view>
   </view>
 
   <view class="checkBox">
     <view class ="row-checkBox" style="display: flexbox;">
       <checkbox></checkbox>
-      <text class = "rememberText">I agree with service of SB Shuttle </text>
+      <text class = "rememberText">I agree with service of SB Shuttle</text>
     </view>
   </view>
-    <button class="btnSize" >Sign up</button>
+    <button onTap = "toPagePayment" class="btnSize" >Next</button>
 
+    <!--
     <view class="haveAcc">
       <label>
         <navigator open-type="navigate" url="pages/login/index">
@@ -33,4 +41,5 @@
         </navigator>
       </label>
     </view>
+  -->
 </view>

@@ -2,6 +2,7 @@ Page({
     data: {
         showOption1: false,
         showTerm: true,
+        showPrivacy : false,
         selected1: "AM",
         items1: ["AM", "PM"],
 
@@ -46,14 +47,30 @@ Page({
             showTerm: false,
         });
     },
+    onClosePrivacy() {
+      this.setData({
+        showPrivacy: false
+      })
+    },
     onClickContinue(e) {
         this.setData({
-            showTerm: false
+            showTerm: false,
+            showPrivacy : true
         })
         my.showTabBar({
             animation: true
         })
     },
+    onClickPrivacy(e) {
+      this.setData({
+        showPrivacy: false
+      })
+      my.hideTabBar({
+        animation: true
+      })
+    }
+
+
 
 
     onRightClick(event) {
@@ -144,7 +161,7 @@ Page({
                     });
                     if (result.confirm == true) {
                         my.navigateTo({
-                            url: "pages/payment/index"
+                            url: "pages/signup/index"
                         })
                     }
                 },

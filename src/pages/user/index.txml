@@ -1,6 +1,24 @@
 <view class ="content-page">
   <text>Personal information</text>
 </view>
+
+<view class = "container" style="background-color: Gainsboro; border-radius: 15px; width: 80%; margin-top: 5%; margin-left: 5%;">
+  <view class ="icon" style="border-radius: 2px; display: flex; margin-left: 5%;">
+    <view class="container-icon" style="margin-left: -2%;"><icon type="info"></icon></view>
+    <view class ="info-name" style="margin-left: 2%;">{{"Nguyen Minh Thong"}}</view>
+  </view>
+  <view>
+    <view class ="info-address" style="margin-left: 5%;">{{"317 Nguyen Van Luong P12 Q6 TPHCM"}}</view>
+  </view>
+  <view>
+  </view>
+</view>
+<view style="margin-left: 70%; margin-top: 2%; border-radius: 15px; background-color: crimson; max-width: 8%;">
+  <icon type="edit">
+
+  </icon></view>
+
+
 <view>
   <view class ="container-avatar">
     <uploader style="width: 160px; height: 150px; border-radius: 100%;" iconSize="40">
@@ -36,6 +54,8 @@
       <textfield id ="tfAddr"></textfield>
     </view>
   </view>
+
+ 
   <!-- Lien he voi shuttle-->
   <view class ="content-ac">Account</view>
 
@@ -52,9 +72,14 @@
 
  <view class ="content-general">General infomation</view>
  <view class ="container-general">
-   <list-item arrow upperSubtitle="Support center" thumb="assets/support.png" thumbSize="30px" onClick="" id ="support"></list-item>
+   <list-item arrow upperSubtitle="Support center"  thumb="assets/support.png" thumbSize="30px" onClick=" onPhoneCall" id ="support">
+    <view slot="suffix">
+      <button class="text-title text-regular" type="ghost"  size ="medium" style="color: white; background-color: white;" onTap="onPhoneCall">"Call tiki"</button>
+    </view>
+  </list-item>
 
    <list-item arrow upperSubtitle="Rating Application" thumb="/assets/rating.png" thumbSize="30px" onClick="" id ="rating"></list-item>
+
    
  </view>
 </view>

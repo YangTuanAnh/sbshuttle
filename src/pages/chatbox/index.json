@@ -6,6 +6,8 @@
   "components": true,
 
   "usingComponents" : {
-    "avatar": "@tiki.vn/tini-ui/es/avatar/index"
+    "avatar": "@tiki.vn/tini-ui/es/avatar/index",
+    "textfield": "@tiki.vn/tini-ui/es/textfield/index"
+    
   }
 }

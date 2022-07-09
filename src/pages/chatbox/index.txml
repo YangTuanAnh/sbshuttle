@@ -39,4 +39,12 @@
       </view>
    </view>
   </view>
+
+  <view class = "container-formchat" style="max-width: 100%; margin-left: 0%; margin-top: 10%;">
+    <textfield
+    placeholder="Message with SB Shuttle"
+    shape="pill"
+  />
+  </view>
 </view>
+

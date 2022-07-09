@@ -1,7 +1,0 @@
-{
-    "backgroundColor": "#FFFFFF",
-    "usingComponents": {
-        "image": "@tiki.vn/tini-ui/es/image/index",
-        "lottie": "@tiki.vn/tini-ui/es/lottie/index"
-    }
-}

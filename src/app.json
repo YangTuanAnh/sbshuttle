@@ -4,7 +4,6 @@
         "pages/odersDetail/index",
         "pages/user/index",
         "pages/receive/index",
-        "pages/login/index",
         "pages/signup/index",
         "pages/getAddress/index",
         "pages/order/index",
