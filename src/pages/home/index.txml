@@ -49,16 +49,16 @@
    </carousel>
 
   </view> 
-
+  <!--
   <view class="w-full flex justify-center items-center py-small" style="margin-left: -10%;">
     <button class="radius-pill text-black" size="medium" id="btn_send" type="">Send</button>
     <button class="radius-pill text-white" onTap="onTap" size="medium"  id="btn_receive" type="ghost">Receive</button>
-  </view>
+  </view>-->
 
-  <!-- <view class="next_page" style=" display:flex;">
+  <view class="next_page" style=" display:flex;">
     <button onTap="" size="medium" id="btn_send"  >Send</button>
     <button onTap="onTap" size="medium" type="ghost" id="btn_receive">Receive</button>
-  </view> -->
+  </view>
 
   <view class="content-routine"><text>Routine</text></view>
 
