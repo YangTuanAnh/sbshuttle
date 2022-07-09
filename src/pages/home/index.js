@@ -2,7 +2,7 @@ Page({
     data: {
         showOption1: false,
         showTerm: true,
-        showPrivacy : false,
+        showPrivacy: false,
         selected1: "AM",
         items1: ["AM", "PM"],
 
@@ -61,27 +61,27 @@ Page({
         });
     },
     onClosePrivacy() {
-      this.setData({
-        showPrivacy: false
-      })
+        this.setData({
+            showPrivacy: false
+        })
     },
     onClickContinue(e) {
         this.setData({
             showTerm: false,
-            showPrivacy : true
+            showPrivacy: true
         })
         my.showTabBar({
             animation: true
         })
     },
     onClickPrivacy(e) {
-      this.setData({
-        showPrivacy: false
-      })
-      my.hideTabBar({
-        animation: true
-      })
-    }
+        this.setData({
+            showPrivacy: false
+        })
+        my.hideTabBar({
+            animation: true
+        })
+    },
 
 
 
