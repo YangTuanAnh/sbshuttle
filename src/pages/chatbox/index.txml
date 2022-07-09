@@ -6,15 +6,15 @@
       <view class ="avtBoot" style="margin-top: 2%;"><avatar name="Avatar" size="" style="margin:8px" src="/assets/food-delivery.png"/></view>
 
       <view class ="messBoot">
-        <view class ="p-small ms1" style="border-radius: 10px; background-color: LightGray; width: 50%; margin-top: 2%;"><text>Hello! May I help you ?</text></view>
+        <view class ="p-small ms1" style="border-radius: 10px; background-color: LightGray; width: 75%; margin-top: 2%;"><text>Hello! May I help you ?</text></view>
         <view class ="btn1"><button type = "outline" size="medium" style="border-radius: 10px; margin-top: 4%;">Check availability</button></view>
       </view>
-      <view class ="avtUser" style="margin-top: 2%; margin-left: 38%;">
+      <view class ="avtUser" style="margin-top: 2%; margin-left: 78%;">
         <avatar  name="Avatar" size="" style="margin:8px" src="/assets/man.png" />
       </view>
       <view class ="user">
         <view class ="messUser">
-          <view class ="p-small ms2"  style="border-radius: 10px; background-color: LightGray; width: 50%; margin-top: 2%"><text>How long does delivery take ?</text></view>
+          <view class ="p-small ms2"  style="border-radius: 10px; background-color: LightGray; max-width: 75%; margin-top: 2%"><text>How long does delivery take ?</text></view>
           <view class ="btn2"><button type = "outline" size="medium" style="border-radius: 10px; margin-top: 4%;">Other issues</button></view>
         </view>
       </view> 
@@ -22,20 +22,20 @@
       <view class ="avtBoot" style="margin-top: 2%;"><avatar name="Avatar" size="" style="margin:8px" src="/assets/food-delivery.png"/></view>
 
       <view class ="messBoot">
-        <view class ="p-small ms1" style="border-radius: 10px; background-color: LightGray; width: 50%; margin-top: 2%;"><text>Please, tell me your address</text></view>
+        <view class ="p-small ms1" style="border-radius: 10px; background-color: LightGray; max-width: 75%; margin-top: 2%;"><text>Please, tell me your address</text></view>
       </view>
 
-      <view class ="avtUser" style="margin-top: 2%; margin-left: 38%;">
+      <view class ="avtUser" style="margin-top: 2%; margin-left: 78%;">
         <avatar  name="Avatar" size="" style="margin:8px" src="/assets/man.png" />
       </view>
 
       <view class ="user">
-        <view class ="p-small ms2"  style="border-radius: 10px; background-color: LightGray; width: 50%; margin-top: 2%"><text>1013 Center Rd, Suite 403-B Wilmington, Delaware 19805</text></view>
+        <view class ="p-small ms2"  style="border-radius: 10px; background-color: LightGray; max-width: 75%; margin-top: 2%"><text>1013 Center Rd, Suite 403-B Wilmington, Delaware 19805</text></view>
       </view>
 
       <view class ="avtBoot" style="margin-top: 2%;"><avatar name="Avatar" size="" style="margin:8px" src="/assets/food-delivery.png"/></view>
       <view class ="messBoot">
-        <view class ="p-small ms1" style="border-radius: 10px; background-color: LightGray; width: 50%; margin-top: 2%;"><text>Delivery will take 2-3 days</text></view>
+        <view class ="p-small ms1" style="border-radius: 10px; background-color: LightGray; width: 75%; margin-top: 2%;"><text>Delivery will take 2-3 days</text></view>
       </view>
    </view>
   </view>

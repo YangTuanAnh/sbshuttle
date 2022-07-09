@@ -1,4 +1,3 @@
-
 <view class ="container-order">
   <view class="container-tabs">
     <tabs tabs="{{tabs1}}"
@@ -17,16 +16,25 @@
             </view> 
           -->
 
-            <view class="next-page-detail p-small">
+            <view class="next-page-detail px-small">
               <view class ="container-order" style="border-radius: 12px;">
                 <label>
                   <navigator  open-type="navigate" url="pages/odersDetail/index">
-                  <view class ="itemAll p-small" style="font-size: 14px;">
-                    <view id ="item1">Package ID : SBS926485</view>
-                    <view id ="item2">Address : 227 Nguyen Van Cu Q10 </view>
-                    <view id ="item3">Delivery : SB Shuttle </view>
-                    <view id ="item4">Total price : $100.12</view>
+                  <view class ="flex border-solid border-0 border-bottom py-small">
+                    <avatar class="inline" src="/assets/cart.png"/>
+                    <view class="inline word-break mx-large">
+                      <view id ="item1">Package ID : SBS926485</view>
+                      <view id ="item2">Address : 227 Nguyen Van Cu Q10 </view>
+                      <view id ="item3">Delivery : SB Shuttle </view>
+                      <view id ="item4">Total price : $100.12</view>
+                    </view>
+                    <button class="inline radius-pill my-large">
+                      +
+                    </button>
                   </view>
+                  
+                  
+                  
                   </navigator>
                 </label>
               </view>

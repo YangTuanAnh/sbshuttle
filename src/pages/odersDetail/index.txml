@@ -1,4 +1,4 @@
-<view class="container p-large" style="background-color: #FEF1F1">
+<view class="container p-large">
   <text class="font-bold text-large">Your package ID:</text>
   <textfield disabled="true" class="my-small" value="SBS437829"/>
 
@@ -55,5 +55,5 @@
     </view>
   </view>
   </view>
-  <button class="w-full radius-pill mt-large" onTap="returnHome">Trở về trang chính</button>
+  <button class="w-full radius-pill mt-large" onTap="returnHome">Return to Main</button>
 </view>
