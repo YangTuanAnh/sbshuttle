@@ -62,7 +62,7 @@ Page({
     onLeftClick(event) {
         console.log('onLeftClick Image/Icon', event);
     },
-    
+
 
 
     toPageReceive(event) {
@@ -180,8 +180,7 @@ Page({
     storageSheet(e) {
         console.log(e.detail.value[0])
         this.setData({
-            storageValue: this.data.storageList[e.detail.value[0]],
-            showOption1: false
+            storageValue: this.data.storageList[e.detail.value[0]]
         })
 
     }

@@ -11,47 +11,6 @@
       <checkbox/>
       <view class ="ml-2x-small">I have read and agree</view>
     </view>
-<<<<<<< Updated upstream
-   </carousel-item>
-
-   </carousel>
-
-  </view> 
-  <!--
-  <view class="w-full flex justify-center items-center py-small" style="margin-left: -10%;">
-    <button class="radius-pill text-black" size="medium" id="btn_send" type="">Send</button>
-    <button class="radius-pill text-white" onTap="onTap" size="medium"  id="btn_receive" type="ghost">Receive</button>
-  </view>-->
-
-  <view class="next_page" style=" display:flex;">
-    <button onTap="" size="medium" id="btn_send"  >SEND</button>
-    <button onTap="toPageReceive" size="medium" type="ghost" id="btn_receive">RECEIVE</button>
-  </view>
-
-  <view class="content-routine"><text>Route</text></view>
-
-  <view class="container-location" style="max-width:100%;">
-
-    <list-item padding="true" arrow upperSubtitle="{{location}}" onClick="" id ="Getaddress">
-      <view>Pick-up Point</view>
-      <view slot="suffix">
-        <button class="text-title text-regular" type="ghost"  size ="medium" style="border-radius: 15px; height: 25px;" onTap="toPageAddress">Get Location</button>
-      </view>
-      <view slot="prefix">
-        <icon type="location" size="24" color="red" />
-      </view>
-    </list-item>
-
-    <list-item padding="true "arrow upperSubtitle="Please select options {{}}" onClick="onClickFinished1">
-      <view>Storage Point</view>
-      <view slot="prefix">
-        <icon type="home" size="24" color="red" />
-      </view>
-    </list-item>
-  </view>
-
-=======
->>>>>>> Stashed changes
  
     </view>
  </template>
@@ -122,7 +81,7 @@
      </list-item>
  
      <list-item padding="true "arrow upperSubtitle="{{storageValue}}" onClick="onClickFinished1">
-       <view>Storage</view>
+       <view>Storage Point</view>
        <view slot="prefix">
          <icon type="home" size="24" color="red" />
        </view>
@@ -130,78 +89,6 @@
    </view>
  
   
-<<<<<<< Updated upstream
-  <view class="pickedtime" style="font-weight: bold; font-size: 12px;">
-      <label><text id ="getTime">1:00 - 2:00 / PM</text></label>
-  </view>
-
-
-  <!-- Item info-->
-  <view class="info-item">
-    <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
-    <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="ghost" style="background-color: lightgrey; color: black;">Baggage</button>
-      <view class="container" style="max-width: 40%; margin-left: 5%;">
-        <stepper
-          onChange="callBackFn"
-          step="{{1}}"
-          showNumber
-          value="{{value}}"
-          inputWidth="60px"
-          min="{{2}}" />
-      </view>
-    </view>
-    <view class="content"></view>
-    <view class ="input7" style="margin-top:4%; max-width: 45%; margin-left: 0%;"><textfield disabled="true" placeholder="PCS ?"></textfield></view>
-  </view>
-
-  <!-- Total bill-->
-  <view class="info-total">
-    <view class="row-total">
-      <text class="text-tatal">
-        Total price
-      </text>
-      <text class="cost-booking">
-        <!-- booking $ -->
-        ${{100.12}}
-      </text>
-    </view>
-  </view>
-  <button onTap ="onConfirm"id="send-sub" class="submit">
-    Submit
-  </button>
-
-</view>
-<block tiki:if"{{showTerm}}">
-  <bottom-sheet show="{{showTerm}}" title="Term and Service Use" buttonTitle="Continue" distanceFromTop="{{100}}" onClose="onClose" onClick="onClickContinue">
-    <template is="bottom-sheet-term" />
-  </bottom-sheet>
-</block>
-
-
-
-
-<view class="block-content" hidden={{!location}}>
-  <view class="title mb-8">Current location:</view>
-  <text class="text-full">Latitude:{{location.latitude}}</text>
-  <text class="text-full">Longitude:{{location.longitude}}</text>
-  <text class="text-full">Altitude:{{location.altitude}}</text>
-  <text class="text-full">Accuracy:{{location.accuracy}}</text>
-  <text class="text-full">Altitude Accuracy:{{location.altitudeAccuracy}}</text>
-  <text class="text-full">Heading:{{location.heading}}</text>
-  <text class="text-full">Speed:{{location.speed}}</text>
-</view>
-
-<!---->
-<template name="bottom-sheet-picker1">
-  <picker-view>
-    <picker-view-column>
-    <view>{{storage1}}</view>
-    <view>{{storage2}}</view>
-    </picker-view-column>
-  </picker-view>
-</template>
-=======
  
    <view class="pick">
      <view class="pick-up-time"><text>Pick up</text></view>
@@ -292,6 +179,5 @@
      </picker-view-column>
    </picker-view>
   </bottom-sheet>
->>>>>>> Stashed changes
  
  
