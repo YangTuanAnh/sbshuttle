@@ -1,65 +1,76 @@
 <view class="container p-large">
-  <text class="font-bold text-large">Your package ID: {{"SBS437829"}}</text>
+  <text class="font-bold text-large">Your Order ID: {{"SBS437829"}}</text>
 
   <view class="bg-white p-large radius-pill my-small">
-  <text class="font-bold text-large block mb-small">Tổng tiền đơn hàng:</text>
+  <text class="font-bold text-large block">Total Charge:</text>
   
   <view>
-    <text class="font-bold inline-block mr-small">Tiền hàng:</text>
-    <text class="inline-block">{{50000}} VND</text>
+    <text class="font-bold inline-block mr-small mt-small">Charge:</text>
+    <text class="inline-block">{{"150,000"}} VND</text>
   </view>
 
   <view>
     <view class="flex">
-      <radio class="inline" checked="True" />
-      <text class="font-bold inline m-small" style="width: 50%">Mã giảm giá:</text>
+      <radio class="inline mt-small" checked="True" />
+      <text class="font-bold inline m-small" style="width: 50%">Discount Code:</text>
       <textfield></textfield>
     
     </view>
-      <text class="block">Mức phí giảm: {{13000}} VND</text>
+      <text class="block">Total Discount: {{"20,000"}} VND</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Tổng tiền sau khi giảm giá:</text>
-    <text class="inline-block">{{50000}} - {{13000}} = {{50000-13000}} VND</text>
+    <text class="font-bold inline-block mr-small mt-small">After Discount :</text>
+    <text class="inline-block">{{"150,000"}} - {{"20,000"}} = {{"150,000-20,000"}} VND</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Địa chỉ tới: </text>
-    <text class="inline-block">227 Nguyễn Văn Cừ, P.4, Q.5, TPHCM</text>
+    <text class="font-bold inline-block mr-small mt-small">Storage Charge: </text>
+    <text class="inline-block">{{0}} VND</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Số điện thoại người gửi: </text>
-    <text class="inline-block">0888644311</text>
+    <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
+    <text class="inline-block">{{20000}} VND</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Số điện thoại người nhận: </text>
-    <text class="inline-block">0888644311</text>
+    <text class="font-bold inline-block mr-small mt-small">Final Charge: </text>
+    <text class="inline-block">{{57000}} VND</text>
   </view>
 
-  <view class="bg-gray30 radius-pill mt-small p-small">
-    <text class="font-bold text-medium block mb-small">Mặt hàng:</text>
+  <view class="bg-gray10 mt-small p-small">
+    <text class="font-bold text-medium block">Details of Order:</text>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Tên mặt hàng: </text>
-      <text class="inline-block">Hành lý abcxyz</text>
+      <text class="font-bold inline-block mr-small mt-small">Baggage Type: </text>
+      <text class="inline-block">Baggage Red Samsonite</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Cân nặng: </text>
-      <text class="inline-block">2 - 5kg</text>
+      <text class="font-bold inline-block mr-small mt-small">Weight: </text>
+      <text class="inline-block">23 KGS</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Thời gian nhận: </text>
+      <text class="font-bold inline-block mr-small mt-small">Receiving Time: </text>
       <text class="inline-block">1:00-2:00 PM</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Loại dịch vụ: </text>
-      <text class="inline-block">SB NOW (2h)</text>
+      <text class="font-bold inline-block mr-small mt-small">Type of Service: </text>
+      <text class="inline-block">SB NOW (2H)</text>
     </view>
   </view>
   </view>
-  <text class="font-bold text-large mb-small">Total price: {{"50.000"}} VND</text>
-  <button class="w-full radius-pill">Confirm Payment</button>
+  
+  <text class="font-bold text-large block">Payment Method:</text>
+  <view class ="container-acount my-small">
+    <list-item arrow upperSubtitle="Pay with Momo" thumb="/assets/purchase-order.png" thumbSize="30px" onClick="toPageOrder" id ="order">
+    </list-item>
+  
+    <list-item arrow upperSubtitle="Pay with Tiki Xu" thumb="/assets/mobile-payment.png" thumbSize="30px" onClick="" id ="getAddress">
+    </list-item>
+  
+    <list-item arrow upperSubtitle="Pay with cash" thumb="/assets/profile.png" thumbSize="30px" onClick="" id ="getAddress">
+    </list-item>
+  </view>
+  <text class="font-bold text-large">Total Price: {{"130,000"}} VND</text>
+  <button class="w-full radius-pill my-small">Confirm Payment</button>
 </view>
-

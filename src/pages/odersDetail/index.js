@@ -8,7 +8,7 @@ Page({
       my.createSelectorQuery()
           .select(event.currentTarget.id)
           .exec((ret) => {
-              my.navigateBack({
+              my.redirectTo({
                   url: "pages/home/index"
               })
           })

@@ -137,9 +137,9 @@ Page({
                     my.alert({
                         title: `${result.confirm}`
                     });
-                    if (confirmButtonText == true) {
+                    if (result.confirm == true) {
                         my.navigateTo({
-                            url: "pages/login/index"
+                            url: "pages/payment/index"
                         })
                     }
                 },
