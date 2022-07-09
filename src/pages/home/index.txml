@@ -56,31 +56,30 @@
   </view>-->
 
   <view class="next_page" style=" display:flex;">
-    <button onTap="" size="medium" id="btn_send"  >Send</button>
-    <button onTap="onTap" size="medium" type="ghost" id="btn_receive">Receive</button>
+    <button onTap="" size="medium" id="btn_send"  >SEND</button>
+    <button onTap="onTap" size="medium" type="ghost" id="btn_receive">RECEIVE</button>
   </view>
 
-  <view class="content-routine"><text>Routine</text></view>
+  <view class="content-routine"><text>Route</text></view>
 
   <view class="container-location" style="max-width:100%;">
 
     <list-item padding="true" arrow upperSubtitle="{{location}}" onClick="" id ="Getaddress">
-      <view>Address</view>
+      <view>Pick-up Point</view>
       <view slot="suffix">
-        <button class="text-title text-regular" type="solid" style="border-radius: 15px;" onTap="toPageAddress">Get address now</button>
+        <button class="text-title text-regular" type="ghost"  size ="medium" style="border-radius: 15px; height: 25px;" onTap="toPageAddress">Get Location</button>
       </view>
       <view slot="prefix">
         <icon type="location" size="24" color="red" />
       </view>
     </list-item>
 
-    <list-item padding="true "arrow upperSubtitle="Storage Ben Thanh">
-      <view>Storage</view>
+    <list-item padding="true "arrow upperSubtitle="Please select options {{}}" onClick="onClickFinished1">
+      <view>Storage Point</view>
       <view slot="prefix">
         <icon type="home" size="24" color="red" />
       </view>
     </list-item>
-
   </view>
 
  
@@ -161,5 +160,20 @@
   <text class="text-full">Heading:{{location.heading}}</text>
   <text class="text-full">Speed:{{location.speed}}</text>
 </view>
+
+<!---->
+<<template name="bottom-sheet-picker1">
+  <picker-view>
+    <picker-view-column>
+    <view>{{storage1}}</view>
+    <view>{{storage2}}</view>
+    </picker-view-column>
+  </picker-view>
+</template>
  
+
+ <!-- Bottom sheet for option-->
+ <bottom-sheet show="{{showOption1}}" title="Options" buttonTitle="Selected"  distanceFromTop="{{100}}" onClose="onClickClose1" onClick="onActionSheet">
+  <template is="bottom-sheet-picker1" />
+ </bottom-sheet>
 

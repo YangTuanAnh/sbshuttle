@@ -1,5 +1,6 @@
 Page({
     data: {
+      showOption1: false,
         showTerm: true,
         selected1: "AM",
         items1: ["AM", "PM"],
@@ -20,6 +21,8 @@ Page({
         disableScroll: true,
 
         //Data page home 
+        storage1 : 'SBS Airport',
+        storage2 : 'SBS City Central'
 
 
     },
@@ -111,7 +114,11 @@ Page({
     },
 
 
+<<<<<<< Updated upstream
     onChange(e) {
+=======
+      onChange(e) {
+>>>>>>> Stashed changes
         console.log('onChange: ', e);
     },
 
@@ -153,9 +160,24 @@ Page({
                 }
             });
 
-
             my.hideLoading();
         }, 5000);
 
-    }
+    },
+
+    onClickFinished1(e) {
+      this.setData({
+          showOption1: true
+      })
+      my.showTabBar({
+          animation: false
+      })
+  },
+
+  onClickClose1(e){
+    this.setData({
+      showOption1: false
+    })
+  },
+
 });
