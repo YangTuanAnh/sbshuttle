@@ -89,8 +89,19 @@
    </view>
  
   
-  <view class="pickedtime" style="font-weight: bold; font-size: 12px;">
-      <label><text id ="getTime">1:00 - 2:00 / PM</text></label>
+   <view class="pick">
+    <view class="pick-up-time"><text>Pick up</text></view>
+    <view class="container-pick" style="display: inline-flex;">
+
+      <view class="time-text">Time</view>
+      <dropdown class="am-pm" bottomSheetTitle=" Choose timeline" shape="rounded" maskClose="{{false}}"
+        bottomSheetHeight="200" items="{{items1}}" value="{{selected1}}" onSelect="onSelect1" placeholder="AM/PM" />
+      <!-- Pick time when customer arrived airport-->
+
+      <dropdown class="time" bottomSheetTitle=" Choose time" shape="rounded" maskClose="{{false}}"
+        bottomSheetHeight="300" items="{{items2}}" value="{{selected2}}" onSelect="onSelect2"
+        placeholder="1:00 - 2:00" />
+    </view>
   </view>
 
 
