@@ -8,7 +8,8 @@
         "pages/signup/index",
         "pages/getAddress/index",
         "pages/order/index",
-        "pages/chatbox/index"
+        "pages/chatbox/index",
+        "pages/payment/index"
     ],
     "window": {
         "defaultTitle": "SB Shuttle",

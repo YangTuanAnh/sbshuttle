@@ -2,56 +2,56 @@
   <text class="font-bold text-large">Your package ID:</text>
   <textfield disabled="true" class="my-small" value="SBS437829"/>
 
-  <text class="block my-small">Tiến độ bưu phẩm: {{"Đã nhận"}}</text>
+  <text class="block my-small">Order Status: {{"Storing at SB Shuttle"}}</text>
   <view class="bg-white p-large radius-pill">
-  <text class="font-bold text-large block my-small">Thông tin đơn hàng:</text>
+  <text class="font-bold text-large block my-small">Details of Order:</text>
   
   <view>
-    <text class="font-bold inline-block mr-small">Tên:</text>
+    <text class="font-bold inline-block mr-small">Name:</text>
     <text class="inline-block">Yang Tuấn Anh</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Địa chỉ nhận: </text>
-    <text class="inline-block">757 Lê Hồng Phong, P.12, Q.10, TPHCM</text>
+    <text class="font-bold inline-block mr-small">Pick-up point: </text>
+    <text class="inline-block">Pillar 9-Arrival Hall-Tan Son Nhat Airport </text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Địa chỉ tới: </text>
-    <text class="inline-block">227 Nguyễn Văn Cừ, P.4, Q.5, TPHCM</text>
+    <text class="font-bold inline-block mr-small">Delivery Point: </text>
+    <text class="inline-block">227 Le Hong Phong St., HCMC</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Số điện thoại người gửi: </text>
+    <text class="font-bold inline-block mr-small">Sender Mobile: </text>
     <text class="inline-block">0888644311</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Số điện thoại người nhận: </text>
+    <text class="font-bold inline-block mr-small">Receiver Mobile: </text>
     <text class="inline-block">0888644311</text>
   </view>
 
   <view class="bg-gray30 radius-pill mt-small p-small">
-    <text class="font-bold text-medium block mb-small">Mặt hàng:</text>
+    <text class="font-bold text-medium block mb-small">Type of Package:</text>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Tên mặt hàng: </text>
-      <text class="inline-block">Hành lý abcxyz</text>
+      <text class="font-bold inline-block mr-small">Type of Package: </text>
+      <text class="inline-block">Baggage Red Samsonite</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Cân nặng: </text>
-      <text class="inline-block">2 - 5kg</text>
+      <text class="font-bold inline-block mr-small">Weight: </text>
+      <text class="inline-block">23 KGS</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Thời gian nhận: </text>
+      <text class="font-bold inline-block mr-small">Reveiving Time: </text>
       <text class="inline-block">1:00-2:00 PM</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Loại dịch vụ: </text>
-      <text class="inline-block">SB NOW (2h)</text>
+      <text class="font-bold inline-block mr-small">Service Type: </text>
+      <text class="inline-block">SB NOW (2H)</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Giá thanh toán: </text>
-      <text class="inline-block">50.000đ</text>
+      <text class="font-bold inline-block mr-small">Total Charge: </text>
+      <text class="inline-block">150.000 VND</text>
     </view>
   </view>
   </view>
