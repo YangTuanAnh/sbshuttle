@@ -109,18 +109,6 @@
           min="{{2}}" />
       </view>
     </view>
-    <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="ghost" style="background-color: lightgrey; color: black;">Belongings</button>
-      <view class="container" style="max-width: 40%; margin-left: 5%;">
-        <stepper
-          onChange="callBackFn"
-          step="{{1}}"
-          showNumber
-          value="{{value}}"
-          inputWidth="60px"
-          min="{{2}}" />
-      </view>
-    </view>
     
   </view>
 

@@ -4,30 +4,30 @@
 
   <text class="block my-small">Order Status: {{"Storing at SB Shuttle"}}</text>
   <view class="bg-white p-large radius-pill">
-  <text class="font-bold text-large block my-small">Details of Order:</text>
+  <text class="font-bold text-large block">Details of Order:</text>
   
   <view>
-    <text class="font-bold inline-block mr-small">Name:</text>
+    <text class="font-bold inline-block mr-small mt-small">Name:</text>
     <text class="inline-block">Yang Tuấn Anh</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Pick-up point: </text>
+    <text class="font-bold inline-block mr-small mt-small">Pick-up point: </text>
     <text class="inline-block">Pillar 9-Arrival Hall-Tan Son Nhat Airport </text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Delivery Point: </text>
+    <text class="font-bold inline-block mr-small mt-small">Delivery Point: </text>
     <text class="inline-block">227 Le Hong Phong St., HCMC</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Sender Mobile: </text>
+    <text class="font-bold inline-block mr-small mt-small">Sender Mobile: </text>
     <text class="inline-block">0888644311</text>
   </view>
 
   <view>
-    <text class="font-bold inline-block mr-small">Receiver Mobile: </text>
+    <text class="font-bold inline-block mr-small mt-small">Receiver Mobile: </text>
     <text class="inline-block">0888644311</text>
   </view>
 
@@ -38,20 +38,20 @@
       <text class="inline-block">Baggage Red Samsonite</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Weight: </text>
+      <text class="font-bold inline-block mr-small mt-small">Weight: </text>
       <text class="inline-block">23 KGS</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Reveiving Time: </text>
+      <text class="font-bold inline-block mr-small mt-small">Reveiving Time: </text>
       <text class="inline-block">1:00-2:00 PM</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Service Type: </text>
+      <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
       <text class="inline-block">SB NOW (2H)</text>
     </view>
     <view class="text-small">
-      <text class="font-bold inline-block mr-small">Total Charge: </text>
-      <text class="inline-block">150.000 VND</text>
+      <text class="font-bold inline-block mr-small mt-small">Total Charge: </text>
+      <text class="inline-block">150.000 USD</text>
     </view>
   </view>
   </view>

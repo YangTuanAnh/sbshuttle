@@ -6,7 +6,7 @@
   
   <view>
     <text class="font-bold inline-block mr-small mt-small">Charge:</text>
-    <text class="inline-block">{{"150,000"}} VND</text>
+    <text class="inline-block">{{"150,000"}} USD</text>
   </view>
 
   <view>
@@ -16,27 +16,27 @@
       <textfield></textfield>
     
     </view>
-      <text class="block">Total Discount: {{"20,000"}} VND</text>
+      <text class="block">Total Discount: {{"20,000"}} USD</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">After Discount :</text>
-    <text class="inline-block">{{"150,000"}} - {{"20,000"}} = {{"150,000-20,000"}} VND</text>
+    <text class="inline-block">{{"150,000"}} - {{"20,000"}} = {{"150,000-20,000"}} USD</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Storage Charge: </text>
-    <text class="inline-block">{{0}} VND</text>
+    <text class="inline-block">{{0}} USD</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Service Type: </text>
-    <text class="inline-block">{{20000}} VND</text>
+    <text class="inline-block">{{20000}} USD</text>
   </view>
 
   <view>
     <text class="font-bold inline-block mr-small mt-small">Final Charge: </text>
-    <text class="inline-block">{{57000}} VND</text>
+    <text class="inline-block">{{57000}} USD</text>
   </view>
 
   <view class="bg-gray10 mt-small">
@@ -71,6 +71,6 @@
     <list-item arrow upperSubtitle="Pay with cash" thumb="/assets/profile.png" thumbSize="30px" onClick="" id ="getAddress">
     </list-item>
   </view>
-  <text class="font-bold text-large">Total Price: {{"130,000"}} VND</text>
+  <text class="font-bold text-large">Total Price: {{"130,000"}} USD</text>
   <button class="w-full radius-pill my-small" onTap="gotoConfirm">Confirm Payment</button>
 </view>
