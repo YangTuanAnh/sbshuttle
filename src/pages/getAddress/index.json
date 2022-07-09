@@ -1,16 +1,9 @@
 {
-  "transparentTitle": "",
-  "disableHardwareBack": "YES",
-  "components": true,
+    "disableHardwareBack": "YES",
+    "components": true,
 
     "usingComponents": {
-      "address": "@tiki.vn/tini-ui/es/address/index",
-<<<<<<< Updated upstream
-      "textfield": "@tiki.vn/tini-ui/es/textfield/index"
-=======
-      "search-bar": "@tiki.vn/tini-ui/es/search-bar/index",
-      "textfield": "@tiki.vn/tini-ui/es/textfield/index"
-      
->>>>>>> Stashed changes
+        "address": "@tiki.vn/tini-ui/es/address/index",
+        "textfield": "@tiki.vn/tini-ui/es/textfield/index"
     }
 }
