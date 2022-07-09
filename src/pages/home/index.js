@@ -215,6 +215,9 @@ Page({
         this.setData({
             showOption1: false
         })
+        my.showTabBar({
+          animation: true
+        })
     },
     storageSheet(e) {
         console.log(e.detail.value[0])
