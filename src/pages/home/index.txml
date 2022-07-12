@@ -126,7 +126,7 @@
   <view class="info-item">
     <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
     <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="ghost" style="background-color: lightgrey; color: black;">Baggage</button>
+      <button  class="item-a" type="ghost" style="background-color: lightgrey; color: black;">No of Baggage</button>
       <view class="container" style="max-width: 40%; margin-left: 5%;">
         <stepper
           onChange="callBackFn"
