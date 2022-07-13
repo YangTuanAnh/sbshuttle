@@ -19,6 +19,10 @@ Page({
             [tabsName]: index
         });
 
+        my.navigateTo({
+          url : "pages/odersDetail/index"
+        })
+
     },
     gotoReceive() {
         my.navigateTo({

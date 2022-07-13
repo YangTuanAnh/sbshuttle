@@ -7,6 +7,9 @@
     </picker-view-column>
   </picker-view>
 </template>
+<!-- Header Slider for apps-->
+
+
 <template name="bottom-sheet-term">
   <view>
     <view class ="px-medium py-2x-small">
@@ -21,7 +24,7 @@
     </view>
  
     </view>
- </template>
+</template>
 
 
  <template name="bottom-privacy">
@@ -35,7 +38,10 @@
    <text>Booking</text>
  </view>
  <view class ="container">
- 
+
+
+
+   
    <view class ="slider" style="width: 100%;">
  
     <carousel
@@ -72,6 +78,9 @@
     </carousel>
  
    </view> 
+
+  
+
    <!--
    <view class="w-full flex justify-center items-center py-small" style="margin-left: -10%;">
      <button class="radius-pill text-black" size="medium" id="btn_send" type="">Send</button>
@@ -87,10 +96,10 @@
  
    <view class="container-location" style="max-width:100%;">
  
-     <list-item padding="true" arrow upperSubtitle="{{location}}" onClick="" id ="Getaddress">
+     <list-item padding="true" arrow upperSubtitle="{{location}}" onClick="toPageAddress" id ="Getaddress">
        <view>Pick-up Point</view>
        <view slot="suffix">
-         <button class="text-title text-regular" type="ghost"  size ="medium" style="border-radius: 15px; height: 25px;" onTap="toPageAddress">Get Location</button>
+         Get address now
        </view>
        <view slot="prefix">
          <icon type="location" size="24" color="red" />
@@ -126,7 +135,7 @@
   <view class="info-item">
     <view class="text-info" style="font-size: 18px; font-weight: bold;"><text>Item infomation</text></view>
     <view class="row-item-a w-full flex flex-row w-full">
-      <button  class="item-a" type="ghost" style="background-color: lightgrey; color: black;">Baggage</button>
+      <button class="item-a" type="ghost" style="background-color: Crimson; color: white;">No of Baggage</button>
       <view class="container" style="max-width: 40%; margin-left: 5%;">
         <stepper
           onChange="callBackFn"
@@ -144,7 +153,7 @@
   <view class="info-total">
     <view class="row-total">
       <text class="text-tatal">
-        Total price
+        Total charge
       </text>
       <text class="cost-booking">
         <!-- booking $ -->
@@ -153,14 +162,14 @@
     </view>
   </view>
   <button onTap ="onConfirm"id="send-sub" class="submit">
-    Submit
+    Proceed
   </button>
 
 </view>
 
 
 <block tiki:if"{{showTerm}}">
-  <bottom-sheet show="{{showTerm}}" title="Term and Service Use" buttonTitle="Continue" distanceFromTop="{{100}}" onClose="onClose" onClick="onClickContinue">
+  <bottom-sheet show="{{showTerm}}" title="Terms and Conditions" buttonTitle="Continue" distanceFromTop="{{100}}" onClose="onClose" onClick="onClickContinue">
     <template is="bottom-sheet-term" />
   </bottom-sheet>
 </block>

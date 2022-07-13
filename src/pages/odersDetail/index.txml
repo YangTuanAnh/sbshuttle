@@ -55,5 +55,5 @@
     </view>
   </view>
   </view>
-  <button class="w-full radius-pill mt-large" onTap="returnHome">Return to Main</button>
+  <button class="w-full radius-pill mt-large" onTap="returnHome">Go to my order</button>
 </view>

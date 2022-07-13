@@ -19,13 +19,13 @@
             <view class="next-page-detail px-small">
               <view class ="container-order" style="border-radius: 12px;">
                 <label>
-                  <navigator  open-type="navigate" url="pages/odersDetail/index">
+       
                   <view class ="flex border-solid border-0 border-bottom py-small">
                     <view class="inline word-break m-small">
                       <view id ="item1">Package ID : SBS926485</view>
                       <view id ="item2">Address : 227 Nguyen Van Cu Q10 </view>
                       <view id ="item3">Delivery : SB Shuttle </view>
-                      <view id ="item4">Total price : $100.12</view>
+                      <view id ="item4">Total price : 283200 VND</view>
                     </view>
                     <view class="flex flex-col">
                       <button class="m-small radius-pill" size="small" onTap="onTabClick">Detail</button>
@@ -34,9 +34,6 @@
                     
                   </view>
                   
-                  
-                  
-                  </navigator>
                 </label>
               </view>
             </view>

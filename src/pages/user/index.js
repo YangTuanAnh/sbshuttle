@@ -1,3 +1,4 @@
+
 Page({
 
   data: {
@@ -47,5 +48,7 @@ Page({
     updatePhone(e) {
         _user_phone = e.detail.value
         console.log(_user_phone)
-    }
+    },
+
+    
 });

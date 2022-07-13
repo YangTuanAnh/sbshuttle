@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/splash/index",
         "pages/home/index",
         "pages/odersDetail/index",
         "pages/user/index",
@@ -9,6 +10,7 @@
         "pages/order/index",
         "pages/chatbox/index",
         "pages/payment/index"
+        
     ],
 
     "window": {

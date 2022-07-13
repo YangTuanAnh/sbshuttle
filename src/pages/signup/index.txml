@@ -15,7 +15,7 @@
     <view class="textPass">
       <text>Enter Your Email</text>
     </view>
-    <textfield class ="tfPass"password="*" id ="tfPW" placeholder="At least 8 characters" onInput="upateEmail"></textfield>
+    <textfield class ="tfPass" id ="tfPW" placeholder="At least 8 characters" onInput="upateEmail"></textfield>
   </view>
 
   <view class ="card">

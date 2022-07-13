@@ -3,7 +3,7 @@ Page ({
 
 
   toPagePayment(){
-    my.navigateTo({
+    my.redirectTo({
       url : "pages/payment/index"
     })
   },

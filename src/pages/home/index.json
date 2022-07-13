@@ -6,6 +6,7 @@
     "components": true,
 
     "usingComponents": {
+        "banner" : "banner/index",
         "textfield": "@tiki.vn/tini-ui/es/textfield/index",
         "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
         "address": "@tiki.vn/tini-ui/es/address/index",

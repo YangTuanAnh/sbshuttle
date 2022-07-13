@@ -1,3 +1,4 @@
+
 Page({
     data: {
         showOption1: false,
@@ -12,7 +13,7 @@ Page({
             "7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00",
             "10:00 - 11:00", "11:00 - 12:00", "12:00 - 1:00"
         ],
-        baggage_amount: 10,
+        baggage_amount: 0,
         curr_charge: 0,
         location: "Please select location",
 
@@ -35,9 +36,11 @@ Page({
     onLoad(e) {
 
     },
+    
     calculatePrice() {
         _curr_change = (this.data.baggage_amount * 6 + (this.data.selected2 === "12:00 - 1:00" ? 5 : 0)) * 23600;
         this.setData({
+          // change money to vietnammese
             curr_charge: _curr_change
         })
         console.log(this.data.curr_charge)
@@ -107,13 +110,9 @@ Page({
     },
 
     toPageAddress(event) {
-        my.createSelectorQuery()
-            .select(event.currentTarget.id)
-            .exec((ret) => {
                 my.navigateTo({
                     url: "pages/getAddress/index"
                 })
-            })
     },
     //fucntion tester address
     getAddress(event) {
@@ -168,7 +167,7 @@ Page({
 
         setTimeout(() => {
             my.confirm({
-                title: 'Do you sure Booking',
+                title: 'Are you sure Booking',
                 content: 'Booking now',
                 confirmButtonText: 'Confirm',
                 cancelButtonText: 'Cancel',
@@ -259,5 +258,14 @@ Page({
         my.showTabBar({
             animation: false
         })
+    },
+
+
+    onShareAppMessage(options) {
+      return {
+        title: 'Awesome App',
+        desc: 'Awesome App',
+        path: 'pages/splash/index',
+      };
     }
 });
