@@ -27,10 +27,8 @@ Page({
 
         //Data page home 
         storageList: ["SBS Airport", "SBS City Central"],
-        storageValue: "Please select options",
+        storageValue: "Please select options"
 
-        //Service Typ
-        showOption2: false
 
     },
     onLoad(e) {
@@ -59,7 +57,6 @@ Page({
         this.setData({
             selected2
         });
-        this.calculatePrice()
     },
     onClose() {
         this.setData({
